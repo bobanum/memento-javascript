@@ -1,0 +1,149 @@
+@import url("babel_sans/style.css");
+@import url("kenyan_coffee/style.css");
+@import url("kernel-panic-nbp/style.css");
+body {
+	font-size: 8pt;
+	font-family: "babel-sans", "arial narrow", arial;
+	zfont-family: kenyan-coffee;
+}
+div.colonnes {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+h1 {
+	font-size: 30px;
+	height: 30px;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: kenyan-coffee;
+	text-align: center;
+	background: #336;
+	border-radius: 7pt;
+	color: white;
+	padding-bottom: 3pt;
+	margin-bottom: 7pt;
+	letter-spacing: .1em;
+}
+section {
+	border: 1pt solid #336;
+	border-radius: .5em;
+	overflow: hidden;
+	margin-bottom: .5em;
+	padding-bottom: 1pt;
+	border-top-width: 1.3em;
+}
+section > header {
+	font-family: kenyan-coffee;
+	zbackground: #336;
+	font-weight: bold;
+	padding: 0 3pt 0pt;
+	color: white;
+	zfont-size: smaller;
+	text-transform: uppercase;
+	letter-spacing: .5pt;
+	margin-top: -1.2em;
+	position: absolute;
+}
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	line-height: 1.1em;
+}
+div.content li {
+	padding: 1pt;
+}
+div.content li:nth-child(2n) {
+	background-color: #eeeef8;
+	border-radius: 3pt;
+}
+h2 {
+	color: #336;
+	margin: 0;
+	font-size: 1em;
+	font-family: kenyan-coffee;
+}
+div.content {
+	padding: 1pt 2pt;
+}
+pre,
+code {
+	margin: 0;
+	letter-spacing: -.1ex;
+}
+sample {
+	font-family: "courier new";
+	float: right;
+}
+code,
+cite {
+	display: inline-block;
+}
+span.def {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: #99c;
+	border-image: none;
+	border-radius: 0.8em /100%;
+	border-style: none solid;
+	border-width: 1pt;
+	zfont-size: smaller;
+	font-style: italic;
+	padding: 0 0.3em;
+}
+span.terme {
+	float: left;
+	width: 4em;
+}
+cite {
+	letter-spacing: 0;
+	font-family: "times new roman";
+	color: white;
+	background-color: #99c;
+	zbox-shadow: 0pt 0 2pt rgba(0, 0, 0, .5) inset;
+	padding: 0 .25em;
+	zborder: .25pt solid rgba(0, 0, 0, 1);
+	border: .5pt solid #99c;
+	border-radius: 1em;
+	font-size: smaller;
+	font-weight: bold;
+	white-space: nowrap;
+	zbackground: -webkit-linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .5));
+	zbackground: -moz-linear-gradient(bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .5));
+	zbackground-color: rgba(0, 0, 0, .1);
+	line-height: 1em;
+	padding-bottom: .2em;
+	vertical-align: middle;
+	border-width: .5pt 2pt;
+}
+cite.signification {
+	color: #99c;
+	background-color: white;
+	margin: -1px;
+}
+code.separateur {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: #9999CC;
+	border-image: none;
+	border-radius: 100% 100% 100% 100% / .6em;
+	border-style: solid none;
+	border-width: 1pt;
+	display: inline-block;
+	height: 1em;
+	margin: 0;
+	text-align: center;
+	width: 1em;
+	vertical-align: middle;
+}
+code.groupe {
+	border: .5pt solid #99c;
+	padding: .5pt;
+	border-radius: 1em;
+}

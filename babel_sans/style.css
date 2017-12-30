@@ -1,0 +1,20 @@
+@font-face {
+	font-family:babel-sans;
+	src:url("BabelSans.ttf");
+}
+@font-face {
+	font-family:babel-sans;
+	font-weight: bold;
+	src:url("BabelSans-Bold.ttf");
+}
+@font-face {
+	font-family:babel-sans;
+	font-style: italic;
+	src:url("BabelSans-Oblique.ttf");
+}
+@font-face {
+	font-family:babel-sans;
+	font-weight: bold;
+	font-style: italic;
+	src:url("BabelSans-BoldOblique.ttf");
+}

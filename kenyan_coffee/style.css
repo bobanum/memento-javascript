@@ -1,0 +1,20 @@
+@font-face {
+	font-family:"kenyan-coffee";
+	src:url("tt/kenyan coffee rg.ttf");
+}
+@font-face {
+	font-family:"kenyan-coffee";
+	font-weight: bold;
+	src:url("tt/kenyan coffee bd.ttf");
+}
+@font-face {
+	font-family:"kenyan-coffee";
+	font-style: italic;
+	src:url("tt/kenyan coffee rg it.ttf");
+}
+@font-face {
+	font-family:"kenyan-coffee";
+	font-weight: bold;
+	font-style: italic;
+	src:url("tt/kenyan coffee bd it.ttf");
+}
