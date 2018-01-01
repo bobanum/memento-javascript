@@ -1,0 +1,580 @@
+/*stretch: NORMAL*/
+@media all {
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ul.ttf");
+		font-weight: 100;
+		font-style: normal;
+		font-stretch: normal;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-el.ttf");
+		font-weight: 200;
+		font-style: normal;
+		font-stretch: normal;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-lt.ttf");
+		font-weight: 300;
+		font-style: normal;
+		font-stretch: normal;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-bk.ttf");
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-rg.ttf");
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sb.ttf");
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-bd.ttf");
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: normal;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-eb.ttf");
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ul-it.ttf");
+		font-weight: 100;
+		font-style: italic;
+		font-stretch: normal;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-el-it.ttf");
+		font-weight: 200;
+		font-style: italic;
+		font-stretch: normal;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-lt-it.ttf");
+		font-weight: 300;
+		font-style: italic;
+		font-stretch: normal;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-bk-it.ttf");
+		font-weight: normal;
+		font-style: italic;
+		font-stretch: normal;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-rg-it.ttf");
+		font-weight: 500;
+		font-style: italic;
+		font-stretch: normal;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sb-it.ttf");
+		font-weight: 600;
+		font-style: italic;
+		font-stretch: normal;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-bd-it.ttf");
+		font-weight: bold;
+		font-style: italic;
+		font-stretch: normal;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-eb-it.ttf");
+		font-weight: 900;
+		font-style: italic;
+		font-stretch: normal;
+	}
+}
+
+/*stretch: SEMI-CONDENSED*/
+@media all {
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-ul.ttf");
+		font-weight: 100;
+		font-style: normal;
+		font-stretch: semi-condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-el.ttf");
+		font-weight: 200;
+		font-style: normal;
+		font-stretch: semi-condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-lt.ttf");
+		font-weight: 300;
+		font-style: normal;
+		font-stretch: semi-condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-bk.ttf");
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: semi-condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-rg.ttf");
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: semi-condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-sb.ttf");
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: semi-condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-bd.ttf");
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: semi-condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-eb.ttf");
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: semi-condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-ul-it.ttf");
+		font-weight: 100;
+		font-style: italic;
+		font-stretch: semi-condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-el-it.ttf");
+		font-weight: 200;
+		font-style: italic;
+		font-stretch: semi-condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-lt-it.ttf");
+		font-weight: 300;
+		font-style: italic;
+		font-stretch: semi-condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-bk-it.ttf");
+		font-weight: normal;
+		font-style: italic;
+		font-stretch: semi-condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-rg-it.ttf");
+		font-weight: 500;
+		font-style: italic;
+		font-stretch: semi-condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-sb-it.ttf");
+		font-weight: 600;
+		font-style: italic;
+		font-stretch: semi-condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-bd-it.ttf");
+		font-weight: bold;
+		font-style: italic;
+		font-stretch: semi-condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-sc-eb-it.ttf");
+		font-weight: 900;
+		font-style: italic;
+		font-stretch: semi-condensed;
+	}
+}
+
+/*stretch: CONDENSED*/
+@media all {
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-ul.ttf");
+		font-weight: 100;
+		font-style: normal;
+		font-stretch: condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-el.ttf");
+		font-weight: 200;
+		font-style: normal;
+		font-stretch: condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-lt.ttf");
+		font-weight: 300;
+		font-style: normal;
+		font-stretch: condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-bk.ttf");
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-rg.ttf");
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-sb.ttf");
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-bd.ttf");
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-eb.ttf");
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-ul-it.ttf");
+		font-weight: 100;
+		font-style: italic;
+		font-stretch: condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-el-it.ttf");
+		font-weight: 200;
+		font-style: italic;
+		font-stretch: condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-lt-it.ttf");
+		font-weight: 300;
+		font-style: italic;
+		font-stretch: condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-bk-it.ttf");
+		font-weight: normal;
+		font-style: italic;
+		font-stretch: condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-rg-it.ttf");
+		font-weight: 500;
+		font-style: italic;
+		font-stretch: condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-sb-it.ttf");
+		font-weight: 600;
+		font-style: italic;
+		font-stretch: condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-bd-it.ttf");
+		font-weight: bold;
+		font-style: italic;
+		font-stretch: condensed;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-cd-eb-it.ttf");
+		font-weight: 900;
+		font-style: italic;
+		font-stretch: condensed;
+	}
+}
+
+/*stretch: SEMI-EXPANDED*/
+@media all {
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-ul.ttf");
+		font-weight: 100;
+		font-style: normal;
+		font-stretch: semi-expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-el.ttf");
+		font-weight: 200;
+		font-style: normal;
+		font-stretch: semi-expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-lt.ttf");
+		font-weight: 300;
+		font-style: normal;
+		font-stretch: semi-expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-bk.ttf");
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: semi-expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-rg.ttf");
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: semi-expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-sb.ttf");
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: semi-expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-bd.ttf");
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: semi-expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-eb.ttf");
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: semi-expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-ul-it.ttf");
+		font-weight: 100;
+		font-style: italic;
+		font-stretch: semi-expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-el-it.ttf");
+		font-weight: 200;
+		font-style: italic;
+		font-stretch: semi-expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-lt-it.ttf");
+		font-weight: 300;
+		font-style: italic;
+		font-stretch: semi-expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-bk-it.ttf");
+		font-weight: normal;
+		font-style: italic;
+		font-stretch: semi-expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-rg-it.ttf");
+		font-weight: 500;
+		font-style: italic;
+		font-stretch: semi-expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-sb-it.ttf");
+		font-weight: 600;
+		font-style: italic;
+		font-stretch: semi-expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-bd-it.ttf");
+		font-weight: bold;
+		font-style: italic;
+		font-stretch: semi-expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-se-eb-it.ttf");
+		font-weight: 900;
+		font-style: italic;
+		font-stretch: semi-expanded;
+	}
+}
+
+/*stretch: EXPANDED*/
+@media all {
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-ul.ttf");
+		font-weight: 100;
+		font-style: normal;
+		font-stretch: expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-el.ttf");
+		font-weight: 200;
+		font-style: normal;
+		font-stretch: expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-lt.ttf");
+		font-weight: 300;
+		font-style: normal;
+		font-stretch: expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-bk.ttf");
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-rg.ttf");
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-sb.ttf");
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-bd.ttf");
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-eb.ttf");
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-ul-it.ttf");
+		font-weight: 100;
+		font-style: italic;
+		font-stretch: expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-el-it.ttf");
+		font-weight: 200;
+		font-style: italic;
+		font-stretch: expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-lt-it.ttf");
+		font-weight: 300;
+		font-style: italic;
+		font-stretch: expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-bk-it.ttf");
+		font-weight: normal;
+		font-style: italic;
+		font-stretch: expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-rg-it.ttf");
+		font-weight: 500;
+		font-style: italic;
+		font-stretch: expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-sb-it.ttf");
+		font-weight: 600;
+		font-style: italic;
+		font-stretch: expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-bd-it.ttf");
+		font-weight: bold;
+		font-style: italic;
+		font-stretch: expanded;
+	}
+	@font-face {
+		font-family: mesmerize;
+		src: url("mesmerize-ex-eb-it.ttf");
+		font-weight: 900;
+		font-style: italic;
+		font-stretch: expanded;
+	}
+}
+

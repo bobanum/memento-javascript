@@ -1,0 +1,129 @@
+@font-face {
+	src: url(Florsn01.ttf);
+	font-family: Florencesans;
+	font-weight: normal;
+	font-style:  normal;
+	font-stretch: normal;
+}
+@font-face {
+	src: url(Florsn02.ttf);
+	font-family: Florencesans;
+	font-weight: bold;
+	font-style:  normal;
+	font-stretch: normal;
+}
+@font-face {
+	src: url(Florsn03.ttf);
+	font-family: Florencesans;
+	font-weight: bold;
+	font-style:  italic;
+	font-stretch: normal;
+}
+@font-face {
+	src: url(Florsn04.ttf);
+	font-family: Florencesans;
+	font-weight: normal;
+	font-style:  italic;
+	font-stretch: normal;
+}
+@font-face {
+	src: url(Florsn33.ttf);
+	font-family: Florencesans;
+	font-weight: 900;
+	font-style:  normal;
+	font-stretch: normal;
+}
+@font-face {
+	src: url(Florsn34.ttf);
+	font-family: Florencesans;
+	font-weight: 900;
+	font-style:  italic;
+	font-stretch: normal;
+}
+
+@font-face {
+	src: url(Florsn05.ttf);
+	font-family: Florencesans;
+	font-weight: normal;
+	font-style:  normal;
+	font-stretch: extra-condensed;
+}
+@font-face {
+	src: url(Florsn06.ttf);
+	font-family: Florencesans;
+	font-weight: bold;
+	font-style:  normal;
+	font-stretch: extra-condensed;
+}
+@font-face {
+	src: url(Florsn07.ttf);
+	font-family: Florencesans;
+	font-weight: bold;
+	font-style:  italic;
+	font-stretch: extra-condensed;
+}
+@font-face {
+	src: url(Florsn08.ttf);
+	font-family: Florencesans;
+	font-weight: normal;
+	font-style:  italic;
+	font-stretch: extra-condensed;
+}
+
+@font-face {
+	src: url(Florsn09.ttf);
+	font-family: Florencesans;
+	font-weight: normal;
+	font-style:  normal;
+	font-stretch: condensed;
+}
+@font-face {
+	src: url(Florsn10.ttf);
+	font-family: Florencesans;
+	font-weight: bold;
+	font-style:  normal;
+	font-stretch: condensed;
+}
+@font-face {
+	src: url(Florsn11.ttf);
+	font-family: Florencesans;
+	font-weight: bold;
+	font-style:  italic;
+	font-stretch: condensed;
+}
+@font-face {
+	src: url(Florsn12.ttf);
+	font-family: Florencesans;
+	font-weight: normal;
+	font-style:  italic;
+	font-stretch: condensed;
+}
+
+@font-face {
+	src: url(Florsn03.ttf);
+	font-family: Florencesans;
+	font-weight: normal;
+	font-style:  normal;
+	font-stretch: expanded;
+}
+@font-face {
+	src: url(Florsn14.ttf);
+	font-family: Florencesans;
+	font-weight: bold;
+	font-style:  normal;
+	font-stretch: expanded;
+}
+@font-face {
+	src: url(Florsn15.ttf);
+	font-family: Florencesans;
+	font-weight: bold;
+	font-style:  italic;
+	font-stretch: expanded;
+}
+@font-face {
+	src: url(Florsn16.ttf);
+	font-family: Florencesans;
+	font-weight: normal;
+	font-style:  italic;
+	font-stretch: expanded;
+}
