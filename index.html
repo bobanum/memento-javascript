@@ -12,8 +12,11 @@
 <body>
 	<div class="page">
 		<div class="colonnes">
-			<h1>Javascript</h1>
-			<section id="identificateurs">
+			<header>
+				<h1>Memento</h1>
+				<h1>Javascript</h1>
+			</header>
+			<article id="identificateurs">
 				<header>Les identificateurs</header>
 				<ul class="body">
 					<li>
@@ -45,59 +48,29 @@
 						</ul>
 					</li>
 				</ul>
-			</section>
-			<section id="variables">
+			</article>
+			<article id="variables">
 				<header>Les variables</header>
-				<ul class="body">
-					<li>Déclaration: <code>var <cite>identificateur</cite><code class="separateur repeter">,</code>;</code>
-					</li>
-					<li>Initialisation: <code>var <code class="groupe"><cite>identificateur</cite> = <cite>expression</cite></code><code class="separateur repeter">,</code>;</code>
-					</li>
-					<li>Attribution: <code><cite>identificateur</cite> = <cite>expression</cite>;</code></li>
-					<li>Utilisation: <cite>identificateur</cite></li>
+				<ul class="body centres-verticaux">
+					<li><div>Déclaration: <code>var <cite>identificateur</cite><code class="separateur repeter">,</code>;</code></div></li>
+					<li><div>Initialisation: <code>var <code class="groupe"><cite>identificateur</cite> = <cite>expression</cite></code><code class="separateur repeter">,</code>;</code></div></li>
+					<li><div>Attribution: <code><cite>identificateur</cite> = <cite>expression</cite>;</code></div></li>
+					<li><div>Utilisation: <cite>identificateur</cite></div></li>
 				</ul>
-			</section>
-			<section id="types_donnees">
+			</article>
+			<article id="types_donnees">
 				<header>Les types de données</header>
 				<ul class="body">
-					<li>
-						<span class="terme">integer</span>
-						<span class="def">nombre entier</span>
-						<samp>1</samp>
-					</li>
-					<li>
-						<span class="terme">float</span>
-						<span class="def">nombre réel</span>
-						<samp>1.1</samp>
-					</li>
-					<li>
-						<span class="terme">string</span>
-						<span class="def">chaine de caractères</span>
-						<samp>"Allô" 'Bye'</samp>
-					</li>
-					<li>
-						<span class="terme">boolean</span>
-						<span class="def">valeur booléenne</span>
-						<samp>true false</samp>
-					</li>
-					<li>
-						<span class="terme">object</span>
-						<span class="def">objet logique</span>
-						<samp>Math</samp>
-					</li>
-					<li>
-						<span class="terme">array</span>
-						<span class="def">tableau de données</span>
-						<samp>[0,3,'a',2]</samp>
-					</li>
-					<li>
-						<span class="terme">function</span>
-						<span class="def">fonction</span>
-						<samp>Math.floor</samp>
-					</li>
+					<li><div><span class="terme">integer</span><span class="def">nombre entier</span><samp>1</samp></div></li>
+					<li><div><span class="terme">float</span><span class="def">nombre réel</span><samp>1.1</samp></div></li>
+					<li><div><span class="terme">string</span><span class="def">chaine de caractères</span><samp>"Allô" 'Bye'</samp></div></li>
+					<li><div><span class="terme">boolean</span><span class="def">valeur booléenne</span><samp>true false</samp></div></li>
+					<li><div><span class="terme">object</span><span class="def">objet logique</span><samp>Math</samp></div></li>
+					<li><div><span class="terme">array</span><span class="def">tableau de données</span><samp>[0,3,'a',2]</samp></div></li>
+					<li><div><span class="terme">function</span><span class="def">fonction</span><samp>Math.floor</samp></div></li>
 				</ul>
-			</section>
-			<section id="operateurs">
+			</article>
+			<article id="operateurs">
 				<header>Opérateurs</header>
 				<ul class="body">
 					<li>
@@ -164,10 +137,10 @@
 						</div>
 					</li>
 				</ul>
-			</section>
-			<section id="conditionnelles">
+			</article>
+			<article id="conditionnelles">
 				<header>Les structures conditionnelles</header>
-				<ul class="body">
+				<ul class="body centres-verticaux">
 					<li>
 						<pre>if (<cite>condition</cite>) <cite>instruction unique</cite></pre>
 					</li>
@@ -206,8 +179,8 @@
 
 
 				</ul>
-			</section>
-			<section id="boucles">
+			</article>
+			<article id="boucles">
 				<header>Les boucles</header>
 				<ul class="body">
 					<li>
@@ -253,10 +226,10 @@
 						</ul>
 					</li>
 				</ul>
-			</section>
-			<section id="fonctions">
+			</article>
+			<article id="fonctions">
 				<header>Les fonctions</header>
-				<ul class="body">
+				<ul class="body	centres-headers">
 					<li>
 						<h2>Déclaration</h2>
 						<div class="bloccode">
@@ -320,8 +293,8 @@
 					</li>
 -->
 				</ul>
-			</section>
-			<section id="chaines">
+			</article>
+			<article id="chaines">
 				<header>Chaines de caractères (string)</header>
 				<ul class="body">
 					<li>
@@ -377,19 +350,24 @@
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li id="echapement">
 						<h2>Échappement</h2>
 						<ul>
-							<li><code>...</code></li>
+							<li><code>\'</code><span>Apostrophe</span></li>
+							<li><code>\"</code><span>Guillemet</span></li>
+							<li><code>\\</code><span>Backslash</span></li>
+							<li><code>\n</code><span>Nouvelle ligne</span></li>
+							<li><code>\r</code><span>Retour de chariot</span></li>
+							<li><code>\t</code><span>Tabulation</span></li>
 						</ul>
 					</li>
 				</ul>
-			</section>
+			</article>
 		</div>
 	</div>
 	<div class="page">
 		<div class="colonnes">
-			<section id="tableaux">
+			<article id="tableaux">
 				<header>Tableaux (array)</header>
 				<ul class="body">
 					<li>
@@ -403,35 +381,38 @@
 					</li>
 					<li>
 						<h2>Modification</h2>
-						<ul>
-							<li><code>t.push(<cite>Expression</cite><code class="separateur">,</code>)</code> Ajoute à la fin</li>
-							<li><code>t.pop()</code> Retourne la dernière valeur et la retire du tableau.</li>
-							<li><code>t.unshift(<cite>Expression</cite><code class="separateur">,</code>)</code> Ajoute au début</li>
-							<li><code>t.shift()</code> Retourne la première valeur et la retire du tableau.</li>
+						<ul class="splits">
+							<li><code>t.push(<cite>Expression</cite><code class="separateur">,</code>)</code> <span class="def">Ajoute à la fin</span></li>
+							<li><code>t.pop()</code> <span class="def">Retourne la dernière valeur et la retire du tableau</span></li>
+							<li><code>t.unshift(<cite>Expression</cite><code class="separateur">,</code>)</code> <span class="def">Ajoute au début</span></li>
+							<li><code>t.shift()</code> <span class="def">Retourne la première valeur <br/>et la retire du tableau</span></li>
 
-<!--							<li class="es6"><code>Array.from()</code></li>-->
-<!--							<li class="es6"><code>Array.isArray()</code></li>-->
-<!--							<li class="es6"><code>Array.observe()</code></li>-->
-<!--							<li class="es6"><code>Array.of()</code></li>-->
-							<li><code>t.concat(<cite class="donnee">array</cite>)</code></li>
-<!--							<li class="es6"><code>t.copyWithin()</code></li>-->
-<!--							<li class="es6"><code>t.entries()</code></li>-->
-<!--							<li class="es6"><code>t.fill()</code></li>-->
-							<li><code>t.join(<cite class="donnee">string</cite>)</code></li>
+<!--							<li class="es6"><code>Array.from()</code><span class="def">...</span></li>-->
+<!--							<li class="es6"><code>Array.isArray()</code><span class="def">...</span></li>-->
+<!--							<li class="es6"><code>Array.observe()</code><span class="def">...</span></li>-->
+<!--							<li class="es6"><code>Array.of()</code><span class="def">...</span></li>-->
+							<li><code>t.concat(<cite class="donnee">array</cite><span class="separateur repeter">,</span>)</code><span class="def">Fusionne des tableaux</span></li>
+<!--							<li class="es6"><code>t.copyWithin()</code><span class="def">...</span></li>-->
+<!--							<li class="es6"><code>t.entries()</code><span class="def">...</span></li>-->
+<!--							<li class="es6"><code>t.fill()</code><span class="def">...</span></li>-->
+							<li><code>t.join(<cite class="donnee">string</cite>)</code><span class="def">Transforme en chaîne de caractères</span></li>
 							<li>
-								<div><code>t.indexOf(<cite>Expression</cite>)</code></div>
-								<div><code>t.lastIndexOf(<cite>Expression</cite>)</code></div>
-								<div><code>t.includes(<cite>Expression</cite>)</code></div>
+								<div>
+									<div><code>t.indexOf(<cite>Expression</cite>)</code></div>
+									<div><code>t.lastIndexOf(<cite>Expression</cite>)</code></div>
+									<div><code>t.includes(<cite>Expression</cite>)</code></div>
+								</div>
+								<span class="def">Cherche dans<br>le tableau</span>
 							</li>
-<!--							<li class="skip"><code>t.keys()</code></li>-->
-							<li><code>t.reverse()</code></li>
-							<li><code>t.slice(<em>debut</em>, <em>fin</em>)</code></li>
-							<li><code>t.sort()</code></li>
-							<li><code>t.splice(<em>debut</em>, <em>longueur</em>)</code></li>
-<!--							<li class="skip"><code>t.toLocaleString()</code></li>-->
-<!--							<li class="skip"><code>t.toSource()</code></li>-->
-<!--							<li class="skip"><code>t.toString()</code></li>-->
-<!--							<li class="skip"><code>t.values()</code></li>-->
+<!--							<li class="skip"><code>t.keys()</code><span class="def">...</span></li>-->
+							<li><code>t.reverse()</code><span class="def">Inverse le tableau</span></li>
+							<li><code>t.slice(<em>debut</em>, <em>fin</em>)</code><span class="def">...</span></li>
+							<li><code>t.sort()</code><span class="def">...</span></li>
+							<li><code>t.splice(<em>debut</em>, <em>longueur</em>)</code><span class="def">...</span></li>
+<!--							<li class="skip"><code>t.toLocaleString()</code><span class="def">...</span></li>-->
+<!--							<li class="skip"><code>t.toSource()</code><span class="def">...</span></li>-->
+<!--							<li class="skip"><code>t.toString()</code><span class="def">...</span></li>-->
+<!--							<li class="skip"><code>t.values()</code><span class="def">...</span></li>-->
 						</ul>
 					</li>
 <!--
@@ -457,33 +438,33 @@
 					</li>
 -->
 				</ul>
-			</section>
-			<section id="definitions">
+			</article>
+			<article id="definitions">
 				<header>Définitions</header>
 				<ul class="body">
-					<li><cite>déclaration</cite> : Annonce de l'utilisation éventuelle d'une variable. Utilise le mot-clé <code>var</code>.</li>
-					<li><cite>initialisation</cite> : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</li>
-					<li>itération : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</li>
-					<li><cite>expression</cite> : Portion de code pouvant être évaluée (avoir une valeur). On peut donc également déterminer son type de donnée.</li>
-					<li><cite>instruction</cite> : Étape individuelle d'exécution du programme. Se termine par un point-virgule. Pour être utile, une instruction doit modifier une variable ou occasionner un affichage.</li>
-					<li>opération</li>
-					<li><cite>condition</cite> : Expression pouvant être évaluée à <code>true</code> ou <code>false</code>.</li>
-					<li><cite>identificateur</cite> Mot unique désignant une variable, constante ou fonction.</li>
+					<li><div><cite>déclaration</cite> : Annonce de l'utilisation éventuelle d'une variable. Utilise le mot-clé <code>var</code>.</div></li>
+					<li><div><cite>initialisation</cite> : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</div></li>
+					<li><div>itération : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</div></li>
+					<li><div><cite>expression</cite> : Portion de code pouvant être évaluée (avoir une valeur). On peut donc également déterminer son type de donnée.</div></li>
+					<li><div><cite>instruction</cite> : Étape individuelle d'exécution du programme. Se termine par un point-virgule. Pour être utile, une instruction doit modifier une variable ou occasionner un affichage.</div></li>
+					<li><div>opération</div></li>
+					<li><div><cite>condition</cite> : Expression pouvant être évaluée à <code>true</code> ou <code>false</code>.</div></li>
+					<li><div><cite>identificateur</cite> Mot unique désignant une variable, constante ou fonction.</div></li>
 				</ul>
-			</section>
-			<section id="vocabulaire">
+			</article>
+			<article id="vocabulaire">
 				<header>Vocabulaire</header>
 				<ul class="body">
-					<li>incrémenter : Augmenter de 1 la valeur d'une variable. Peut également désigner toute augmentation d'une variable, et même la décrémentation de celle-ci.</li>
-					<li>compteur : Variable qui tient le compte des itérations d'boucle.</li>
-					<li>accumulateur : Variable destinée à </li>
-					<li>concaténation : Joindre diverses expressions pour former une chaine.</li>
-					<li><cite>déclaration</cite> : Annoncer l'utilisation éventuelle d'une variable. Utilise le mot-clé <code>var</code>.</li>
-					<li><cite>initialisation</cite> : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</li>
-					<li>itération : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</li>
+					<li><div>incrémenter : Augmenter de 1 la valeur d'une variable. Peut également désigner toute augmentation d'une variable, et même la décrémentation de celle-ci.</div></li>
+					<li><div>compteur : Variable qui tient le compte des itérations d'boucle.</div></li>
+					<li><div>accumulateur : Variable destinée à</div> </li>
+					<li><div>concaténation : Joindre diverses expressions pour former une chaine.</div></li>
+					<li><div><cite>déclaration</cite> : Annoncer l'utilisation éventuelle d'une variable. Utilise le mot-clé <code>var</code>.</div></li>
+					<li><div><cite>initialisation</cite> : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</div></li>
+					<li><div>itération : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</div></li>
 				</ul>
-			</section>
-			<section id="math">
+			</article>
+			<article id="math">
 				<header>L'objet Math</header>
 				<ul class="body">
 					<li>
@@ -539,39 +520,43 @@
 -->
 						</ul>
 					</li>
-						</ul>
-			</section>
-			<section id="dom">
+				</ul>
+			</article>
+			<article id="dom">
 				<header>Le DOM</header>
 				<ul class="body">
 					<li><code>.getElementById</code></li>
 				</ul>
-			</section>
-			<section id="formulaires">
+			</article>
+			<article id="formulaires">
 				<header>Les formulaires</header>
 				<ul class="body">
 					<li><code>.getElementById</code></li>
 				</ul>
-			</section>
-			<section id="evenements">
+			</article>
+			<article id="evenements">
 				<header>Les événements</header>
 				<ul class="body">
 					<li><code>.onclick()</code></li>
 					<li><code>.addEventListener()</code></li>
 				</ul>
-			</section>
+			</article>
 
 
-			<section>
+			<article>
 				<header>Légende</header>
 				<ul class="body">
-					<li><code>Texte courrier noir</code> : À utiliser tel quel.</li>
-					<li><cite>Bulle bleue</cite> : Concept défini ailleurs</li>
-					<li><cite class="signification">Bulle blanche</cite> : Signification spécifique d'une expression.</li>
-					<li><code class="separateur repeter">,</code> Séparateur : Ce qui précède le séparateur peut se répéter en le séparant par ce caractère.</li>
+					<li><div><code>Texte courrier noir</code> : À utiliser tel quel.</div></li>
+					<li><div><cite>Bulle bleue</cite> : Concept défini ailleurs</div></li>
+					<li><div><cite class="signification">Bulle blanche</cite> : Signification spécifique d'une expression.</div></li>
+					<li><div><code class="separateur repeter">,</code> Séparateur : Ce qui précède le séparateur peut se répéter en le séparant par ce caractère.</div></li>
 				</ul>
-			</section>
-
+			</article>
+			<article>
+				<ul>
+					<li>@2018 Martin Boudreau</li>
+				</ul>
+			</article>
 
 			<!--			<div>* Avec exception</div>-->
 			<!--			section>header+ul.body>li-->
