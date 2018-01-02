@@ -4,8 +4,6 @@
 
 @couleur-principale: #b16600;
 @couleur-principale: #363;
-//@couleur-alternance: lighten(@couleur-principale, 60%);
-//@couleur-alternanceinverse: lighten(@couleur-principale, 65%);
 @couleur-alternance: hsl(hue(@couleur-principale), saturation(@couleur-principale), 90%);
 @couleur-alternanceinverse: hsl(hue(@couleur-principale), saturation(@couleur-principale), 97%);
 @couleur-pastille: hsl(hue(@couleur-principale), saturation(@couleur-principale) - 20, lightness(@couleur-principale) + 20);
@@ -122,20 +120,8 @@ div.page {
 		}
 	}
 }
-div.colonnes {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: space-between;
-	height: 100%;
-	& > * {
-		flex: 1 0 auto;
-//		width: calc(e('(100% / 4) - 0.2in'));
-		width: 2.4in;
-	}
+div.page {
 	& > header {
-//		flex: 0 0 auto;
 		.centre;
 		flex-direction: column;
 		line-height: 1;
@@ -144,13 +130,11 @@ div.colonnes {
 		border-radius: 7pt;
 		color: white;
 		padding-bottom: 3pt;
-		margin-bottom: 7pt;
 		font-size: 50px;
 		h1 {
 			font-size: inherit;
 			margin: 0;
 			text-transform: uppercase;
-//			font-family: @police-titre;
 			&:first-child {
 				font-stretch: expanded;
 				font-size: 57%;
@@ -167,17 +151,17 @@ article {
 	border: 1pt solid @couleur-principale;
 	border-radius: 0.5em;
 	overflow: hidden;
-	margin-bottom: 0.5em;
 	box-shadow: 2px 0px -1px @couleur-principale;
 	& > header {
-//		font-family: @police-titre;
+		margin: 0 -1pt;
+		margin-top: -1pt;
+		padding: 0 1pt;
 		background-color: @couleur-principale;
-//		padding: 1pt 3pt;
 		color: white;
 		line-height: 1;
-padding: 1pt 3pt 2pt;
-font-weight: 400;
-font-stretch: normal;
+		padding: 2pt 4pt 2pt;
+		font-weight: 400;
+		font-stretch: normal;
 	}
 }
 .es6, .skip {
@@ -209,7 +193,6 @@ sup {
 		border-radius: 3pt;
 		&:nth-child(2n) {
 			background-color: @couleur-alternance;
-//			border: 1px solid @couleur-alternance;
 			& > ul > li {
 				padding: 3pt;
 				&:nth-child(2n) {
@@ -238,7 +221,6 @@ h2 {
 	margin: 0;
 	font-size: 1em;
 	font-family: @police-titre;
-//	margin-top: .5em;
 }
 pre,
 code {
@@ -311,7 +293,6 @@ code.separateur {
 	margin: 0;
 	text-align: center;
 	padding: 0 .5ch;
-//	width: 1em;
 	vertical-align: middle;
 }
 .nowrap {

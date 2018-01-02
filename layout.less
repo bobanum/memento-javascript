@@ -1,0 +1,102 @@
+@s : e('/');
+div.colonnes {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	height: 100%;
+	& > * {
+		flex: 1 0 auto;
+		width: 2.4in;
+		& + * {
+			margin-top: 2pt;
+		}
+	}
+}
+div.grille {
+	display: grid;
+	grid-auto-flow: dense column;
+	grid-gap: 0.1in .2in;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(17, 1fr);
+	article {
+		margin-bottom: 0;
+	}
+	#identificateurs {
+		grid-row: span 9;
+		grid-column: span 1;
+	}
+	#variables {
+		grid-row: span 3;
+		grid-column: span 1;
+	}
+	#types_donnees {
+		grid-row: span 4;
+		grid-column: span 1;
+	}
+	#operateurs {
+	//	display: none;
+		grid-area: 1 @s 3 @s span 9 @s span 2;
+	//	grid-column-start: 2;
+	//	grid-column-end: 4;
+		*.body {
+			flex-wrap: wrap;
+			align-content: space-between;
+			height: 100%;
+			& > li {
+				width: calc(50% e('-') .1in);
+			}
+		}
+	}
+	#conditionnelles {
+		grid-row: auto e('/') span 8;
+		grid-column: span 1;
+	}
+	#boucles {
+		grid-row: span 8;
+		grid-column: span 1;
+	}
+	#fonctions {
+		grid-row: span 6;
+		grid-column: span 1;
+	}
+	#chaines {
+		grid-row: span 9;
+		grid-column: span 1;
+	}
+	#echapement {
+		grid-row: span 3;
+		grid-column: span 1;
+	}
+	#tableaux {
+		grid-area: auto @s auto @s span 10 @s span 1;
+		grid-column: span 1;
+	}
+	#definitions {
+		grid-row: span 7;
+		grid-column: span 1;
+		order: 0;
+	}
+	#vocabulaire {
+		display: none;
+		grid-row: span 4;
+		grid-column: span 1;
+	}
+	#math {
+		grid-row: span 3;
+		grid-column: span 1;
+	}
+	#dom {
+		grid-row: span 3;
+		grid-column: span 1;
+	}
+	#formulaires {
+		grid-row: span 3;
+		grid-column: span 1;
+	}
+	#evenements {
+		grid-row: span 3;
+		grid-column: span 1;
+	}
+}

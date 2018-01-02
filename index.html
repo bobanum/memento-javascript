@@ -4,563 +4,558 @@
 <head>
 	<meta charset="utf-8" />
 	<!-- <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=UTF-8" /> -->
-	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="page.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
 	<title>Javascript</title>
 </head>
 
 <body>
-	<div class="page">
-		<div class="colonnes">
-			<header>
-				<h1>Memento</h1>
-				<h1>Javascript</h1>
-			</header>
-			<article id="identificateurs">
-				<header>Les identificateurs</header>
-				<ul class="body">
-					<li>
-						<div>Servent à identifier une variable, une constante, une fonction ou une classe d'objet</div>
-					</li>
-					<li>
-						<h2>Règles</h2>
-						<ul>
-							<li>Noms significatifs</li>
-							<li>Pas d'espaces ni d'accents</li>
-							<li>Lettres minuscules, lettre majuscules, chiffres, <span class="nowrap">caractère de soulignement ( <code>_</code> )</span></li>
-							<li>Ne doit pas commencer par un chiffre</li>
-							<li>Ne doit pas être un mot réservé</li>
-						</ul>
-					</li>
-					<li>
-						<h2>Conventions</h2>
-						<ul>
-							<li>Pleine majuscule: constante. <samp class="example">PI</samp></li>
-							<li>Majuscule initiale: classe d'objet. <samp class="example">Date</samp></li>
-							<li>Soulignement initial: propriété privée. <samp class="example">_x</samp></li>
-						</ul>
-					</li>
-					<li>
-						<h2>Séparation des mots</h2>
-						<ul>
-							<li>Séparés par un soulignement (<em lang="en">snake case</em>). <samp class="example">ma_variable_globale</samp></li>
-							<li>Distingués par une majuscule initiale (<em lang="en">camel case</em>). <samp class="example">maVariableGlobale</samp></li>
-						</ul>
-					</li>
-				</ul>
-			</article>
-			<article id="variables">
-				<header>Les variables</header>
-				<ul class="body centres-verticaux">
-					<li><div>Déclaration: <code>var <cite>identificateur</cite><code class="separateur repeter">,</code>;</code></div></li>
-					<li><div>Initialisation: <code>var <code class="groupe"><cite>identificateur</cite> = <cite>expression</cite></code><code class="separateur repeter">,</code>;</code></div></li>
-					<li><div>Attribution: <code><cite>identificateur</cite> = <cite>expression</cite>;</code></div></li>
-					<li><div>Utilisation: <cite>identificateur</cite></div></li>
-				</ul>
-			</article>
-			<article id="types_donnees">
-				<header>Les types de données</header>
-				<ul class="body">
-					<li><div><span class="terme">integer</span><span class="def">nombre entier</span><samp>1</samp></div></li>
-					<li><div><span class="terme">float</span><span class="def">nombre réel</span><samp>1.1</samp></div></li>
-					<li><div><span class="terme">string</span><span class="def">chaine de caractères</span><samp>"Allô" 'Bye'</samp></div></li>
-					<li><div><span class="terme">boolean</span><span class="def">valeur booléenne</span><samp>true false</samp></div></li>
-					<li><div><span class="terme">object</span><span class="def">objet logique</span><samp>Math</samp></div></li>
-					<li><div><span class="terme">array</span><span class="def">tableau de données</span><samp>[0,3,'a',2]</samp></div></li>
-					<li><div><span class="terme">function</span><span class="def">fonction</span><samp>Math.floor</samp></div></li>
-				</ul>
-			</article>
-			<article id="operateurs">
-				<header>Opérateurs</header>
-				<ul class="body">
-					<li>
-						<h2>Règles générales</h2>
-						<div>Deux expressions ne peuvent jamais être directement juxtaposées. Un opérateur doit s'interpose entre ces deux expressions pour en donner une troisième. Une opération peut donc également être évaluée.</div>
-						<div>Syntaxe : <cite>expression</cite> <cite>opérateur</cite> <cite>expression</cite></div>
-						<h2>Opérateurs mathématiques</h2>
-						<ul>
-							<li><code>+</code> <span class="def">addition</span>, <code>-</code> <span class="def">soustraction</span></li>
-							<li><code>*</code> <span class="def">multiplication</span>, <code>/</code> <span class="def">division</span>, <code>%</code> <span class="def">modulo</span></li>
-						</ul>
-					</li>
-					<li>
-						<h2>Opérateurs de comparaison</h2>
-						<ul>
-							<li><code>&lt;</code> <span class="def">plus petit</span>, <code>&lt;=</code> <span class="def">plus petit ou égal</span></li>
-							<li><code>&gt;</code> <span class="def">plus grand</span>, <code>&gt;=</code> <span class="def">plus grand ou égal</span></li>
-							<li><code>==</code> <span class="def">égal</span>, <code>===</code> <span class="def">strictement égal</span></li>
-							<li><code>!=</code> <span class="def">différent</span>, <code>!==</code> <span class="def">strictement différent</span></li>
-						</ul>
-					</li>
-					<li>
-						<h2>Opérateur de chaine</h2>
-						<ul>
-							<li><code>+</code> <span class="def">concaténation</span></li>
-						</ul>
-					</li>
-					<li>
-						<h2>Opérateurs booléens et de bits</h2>
-						<ul>
-							<li><code>&amp;&amp;</code> <span class="def">ET logique</span>, <code>||</code> <span class="def">OU logique</span></li>
-							<li><code>&amp;</code> <span class="def">ET binaire</span>, <code>|</code> <span class="def">OU binaire</span>, <code>^</code> <span class="def">OU exclusif binaire</span></li>
-							<li><code>&lt;&lt;</code> <span class="def">décalage gauche</span>, <code>&gt;&gt;</code> <span class="def">décalage droite</span></li>
-						</ul>
-					</li>
-					<li>
-						<h2>Opérateurs d'attribution</h2>
-						<div>Syntaxe: <cite>variable</cite> <cite>opérateur</cite> <cite>expression</cite></div>
-						<ul>
-							<li><code>=</code> <span class="def">Attribution. Met la valeur de l'expression dans la variable.</span></li>
-							<li><code>+=</code> <span class="def">Accumulation. Ajoute à la valeur actuelle de la variable celle de l'expression.</span>
-								<div>Les opérateurs <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code>, <code>&amp;=</code>, <code>|=</code>, <code>~=</code>, <code>&lt;&lt;=</code>, <code>&gt;&gt;=</code> ont un fonctionnement similaire.</div>
-							</li>
-							<li><code>++</code><cite>variable</cite>, <cite>variable</cite><code>++</code> <span class="def">pré et post incrémentation</span></li>
-							<li><code>--</code><cite>variable</cite>, <cite>variable</cite><code>--</code> <span class="def">pré et post décrémentation</span></li>
-						</ul>
-					</li>
-					<li>
-						<h2>Opérateurs unitaires</h2>
-						<div>Syntaxe: <cite>opérateur</cite> <cite>expression</cite></div>
-						<ul>
-							<li><code>+</code> <span class="def">positif</span></li>
-							<li><code>-</code> <span class="def">négatif. Inverse le signe</span></li>
-							<li><code>!</code> <span class="def">négation. Inverse la valeur booléenne.</span></li>
-							<li><code>~</code> <span class="def">inversion de bits</span></li>
-						</ul>
-					</li>
-					<li>
-						<h2>Opérateur ternaire</h2>
-						<div>Syntaxe:
-							<div>
-								<code>(</code><cite>condition</cite><code>)</code> <code>?</code> <cite class="signification">valeur si true</cite> : <cite class="signification">valeur si false</cite>
-							</div>
+	<div class="page grille">
+		<header>
+			<h1>Memento</h1>
+			<h1>Javascript</h1>
+		</header>
+		<article id="identificateurs">
+			<header>Les identificateurs</header>
+			<ul class="body">
+				<li>
+					<div>Servent à identifier une variable, une constante, une fonction ou une classe d'objet</div>
+				</li>
+				<li>
+					<h2>Règles</h2>
+					<ul>
+						<li>Noms significatifs</li>
+						<li>Pas d'espaces ni d'accents</li>
+						<li>Lettres minuscules, lettre majuscules, chiffres, <span class="nowrap">caractère de soulignement ( <code>_</code> )</span></li>
+						<li>Ne doit pas commencer par un chiffre</li>
+						<li>Ne doit pas être un mot réservé</li>
+					</ul>
+				</li>
+				<li>
+					<h2>Conventions</h2>
+					<ul>
+						<li>Pleine majuscule: constante. <samp class="example">PI</samp></li>
+						<li>Majuscule initiale: classe d'objet. <samp class="example">Date</samp></li>
+						<li>Soulignement initial: propriété privée. <samp class="example">_x</samp></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Séparation des mots</h2>
+					<ul>
+						<li>Séparés par un soulignement (<em lang="en">snake case</em>). <samp class="example">ma_variable_globale</samp></li>
+						<li>Distingués par une majuscule initiale (<em lang="en">camel case</em>). <samp class="example">maVariableGlobale</samp></li>
+					</ul>
+				</li>
+			</ul>
+		</article>
+		<article id="variables">
+			<header>Les variables</header>
+			<ul class="body centres-verticaux">
+				<li><div>Déclaration: <code>var <cite>identificateur</cite><code class="separateur repeter">,</code>;</code></div></li>
+				<li><div>Initialisation: <code>var <code class="groupe"><cite>identificateur</cite> = <cite>expression</cite></code><code class="separateur repeter">,</code>;</code></div></li>
+				<li><div>Attribution: <code><cite>identificateur</cite> = <cite>expression</cite>;</code></div></li>
+				<li><div>Utilisation: <cite>identificateur</cite></div></li>
+			</ul>
+		</article>
+		<article id="types_donnees">
+			<header>Les types de données</header>
+			<ul class="body">
+				<li><div><span class="terme">integer</span><span class="def">nombre entier</span><samp>1</samp></div></li>
+				<li><div><span class="terme">float</span><span class="def">nombre réel</span><samp>1.1</samp></div></li>
+				<li><div><span class="terme">string</span><span class="def">chaine de caractères</span><samp>"Allô" 'Bye'</samp></div></li>
+				<li><div><span class="terme">boolean</span><span class="def">valeur booléenne</span><samp>true false</samp></div></li>
+				<li><div><span class="terme">object</span><span class="def">objet logique</span><samp>Math</samp></div></li>
+				<li><div><span class="terme">array</span><span class="def">tableau de données</span><samp>[0,3,'a',2]</samp></div></li>
+				<li><div><span class="terme">function</span><span class="def">fonction</span><samp>Math.floor</samp></div></li>
+			</ul>
+		</article>
+		<article id="operateurs">
+			<header>Opérateurs</header>
+			<ul class="body">
+				<li>
+					<h2>Règles générales</h2>
+					<div>Deux expressions ne peuvent jamais être directement juxtaposées. Un opérateur doit s'interpose entre ces deux expressions pour en donner une troisième. Une opération peut donc également être évaluée.</div>
+					<div>Syntaxe : <cite>expression</cite> <cite>opérateur</cite> <cite>expression</cite></div>
+					<h2>Opérateurs mathématiques</h2>
+					<ul>
+						<li><code>+</code> <span class="def">addition</span>, <code>-</code> <span class="def">soustraction</span></li>
+						<li><code>*</code> <span class="def">multiplication</span>, <code>/</code> <span class="def">division</span>, <code>%</code> <span class="def">modulo</span></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Opérateurs de comparaison</h2>
+					<ul>
+						<li><code>&lt;</code> <span class="def">plus petit</span>, <code>&lt;=</code> <span class="def">plus petit ou égal</span></li>
+						<li><code>&gt;</code> <span class="def">plus grand</span>, <code>&gt;=</code> <span class="def">plus grand ou égal</span></li>
+						<li><code>==</code> <span class="def">égal</span>, <code>===</code> <span class="def">strictement égal</span></li>
+						<li><code>!=</code> <span class="def">différent</span>, <code>!==</code> <span class="def">strictement différent</span></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Opérateur de chaine</h2>
+					<ul>
+						<li><code>+</code> <span class="def">concaténation</span></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Opérateurs booléens et de bits</h2>
+					<ul>
+						<li><code>&amp;&amp;</code> <span class="def">ET logique</span>, <code>||</code> <span class="def">OU logique</span></li>
+						<li><code>&amp;</code> <span class="def">ET binaire</span>, <code>|</code> <span class="def">OU binaire</span>, <code>^</code> <span class="def">OU exclusif binaire</span></li>
+						<li><code>&lt;&lt;</code> <span class="def">décalage gauche</span>, <code>&gt;&gt;</code> <span class="def">décalage droite</span></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Opérateurs d'attribution</h2>
+					<div>Syntaxe: <cite>variable</cite> <cite>opérateur</cite> <cite>expression</cite></div>
+					<ul>
+						<li><code>=</code> <span class="def">Attribution. Met la valeur de l'expression dans la variable.</span></li>
+						<li><code>+=</code> <span class="def">Accumulation. Ajoute à la valeur actuelle de la variable celle de l'expression.</span>
+							<div>Les opérateurs <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code>, <code>&amp;=</code>, <code>|=</code>, <code>~=</code>, <code>&lt;&lt;=</code>, <code>&gt;&gt;=</code> ont un fonctionnement similaire.</div>
+						</li>
+						<li><code>++</code><cite>variable</cite>, <cite>variable</cite><code>++</code> <span class="def">pré et post incrémentation</span></li>
+						<li><code>--</code><cite>variable</cite>, <cite>variable</cite><code>--</code> <span class="def">pré et post décrémentation</span></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Opérateurs unitaires</h2>
+					<div>Syntaxe: <cite>opérateur</cite> <cite>expression</cite></div>
+					<ul>
+						<li><code>+</code> <span class="def">positif</span></li>
+						<li><code>-</code> <span class="def">négatif. Inverse le signe</span></li>
+						<li><code>!</code> <span class="def">négation. Inverse la valeur booléenne.</span></li>
+						<li><code>~</code> <span class="def">inversion de bits</span></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Opérateur ternaire</h2>
+					<div>Syntaxe:
+						<div>
+							<code>(</code><cite>condition</cite><code>)</code> <code>?</code> <cite class="signification">valeur si true</cite> : <cite class="signification">valeur si false</cite>
 						</div>
-					</li>
-				</ul>
-			</article>
-			<article id="conditionnelles">
-				<header>Les structures conditionnelles</header>
-				<ul class="body centres-verticaux">
-					<li>
-						<pre>if (<cite>condition</cite>) <cite>instruction unique</cite></pre>
-					</li>
-					<li>
-						<pre>if (<cite>condition</cite>) { <cite>instructions</cite> }</pre>
-					</li>
-					<li>
-						<pre>if (<cite>condition</cite>) { <cite>instructions</cite> }</pre>
-						<pre>else { <cite>instructions</cite> }</pre>
-					</li>
-					<li>
-						<pre>if (<cite>condition</cite>) { <cite>instructions</cite> }</pre>
-						<pre>else if (<cite>condition</cite>) { <cite>instructions</cite> }</pre>
-					</li>
-					<li>
-						<pre>if (<cite>condition</cite>) { <cite>instructions</cite> }</pre>
-						<pre>else if (<cite>condition</cite>) { <cite>instructions</cite> }</pre>
-						<pre>else { <cite>instructions</cite> }</pre>
-					</li>
-					<li>
-						<pre>switch (<cite>valeur évaluée</cite>) {</pre>
-						<pre>  case <cite>valeur condition</cite> :</pre>
-						<pre>    <cite>instructions</cite></pre>
-						<pre>  break;</pre>
-						<pre>  default :</pre>
-						<pre>    <cite>instructions</cite></pre>
-						<pre>}</pre>
-					</li>
-					<li>
-						<h2>Équivalents de faux</h2>
-						<ul>
-							<li><code>false</code>, <code>0</code>, <code>""</code> <span class="def">chaine vide</span>, <code>[]</code> <span class="def">tableau vide</span></li>
-							<li><code>undefined</code>, <code>null</code>, <code>NaN</code></li>
-						</ul>
-					</li>
+					</div>
+				</li>
+			</ul>
+		</article>
+		<article id="conditionnelles">
+			<header>Les structures conditionnelles</header>
+			<ul class="body centres-verticaux">
+				<li>
+					<pre>if (<cite>condition</cite>) <cite>instruction unique</cite></pre>
+				</li>
+				<li>
+					<pre>if (<cite>condition</cite>) { <cite>instructions</cite> }</pre>
+				</li>
+				<li>
+					<pre>if (<cite>condition</cite>) { <cite>instructions</cite> }</pre>
+					<pre>else { <cite>instructions</cite> }</pre>
+				</li>
+				<li>
+					<pre>if (<cite>condition</cite>) { <cite>instructions</cite> }</pre>
+					<pre>else if (<cite>condition</cite>) { <cite>instructions</cite> }</pre>
+				</li>
+				<li>
+					<pre>if (<cite>condition</cite>) { <cite>instructions</cite> }</pre>
+					<pre>else if (<cite>condition</cite>) { <cite>instructions</cite> }</pre>
+					<pre>else { <cite>instructions</cite> }</pre>
+				</li>
+				<li>
+					<pre>switch (<cite>valeur évaluée</cite>) {</pre>
+					<pre>  case <cite>valeur condition</cite> :</pre>
+					<pre>    <cite>instructions</cite></pre>
+					<pre>  break;</pre>
+					<pre>  default :</pre>
+					<pre>    <cite>instructions</cite></pre>
+					<pre>}</pre>
+				</li>
+				<li>
+					<h2>Équivalents de faux</h2>
+					<ul>
+						<li><code>false</code>, <code>0</code>, <code>""</code> <span class="def">chaine vide</span>, <code>[]</code> <span class="def">tableau vide</span></li>
+						<li><code>undefined</code>, <code>null</code>, <code>NaN</code></li>
+					</ul>
+				</li>
 
 
-				</ul>
-			</article>
-			<article id="boucles">
-				<header>Les boucles</header>
-				<ul class="body">
-					<li>
-						<ul>
-							<li>
-								<pre>for (<cite>initialisation</cite>;<cite>condition</cite>;<cite>incrémentation</cite>)</pre>
-								<pre>{ <cite>instructions</cite> }</pre>
-							</li>
-							<li>
-								<pre>while (<cite>condition</cite>) { <cite>instructions</cite> }</pre>
-							</li>
-							<li>
-								<pre>do { <cite>instructions</cite> } while (<cite>condition</cite>);</pre>
-							</li>
-							<li>
-								<pre>for (<cite>variable</cite> in <cite>objet</cite>) { <cite>instructions</cite> }</pre>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<h2>Éléments (significations)</h2>
-						<ul>
-							<li><cite>initialisation</cite> : <code>var <cite class="signification">compteur</cite> = <cite class="signification">valeur de départ</cite></code></li>
-							<li><cite>condition</cite> : <code><cite class="signification">compteur</cite> &lt; <cite class="signification">valeur d'arrivée</cite></code></li>
-							<li><cite>incrémentation</cite> : <code><cite class="signification">compteur</cite>++</code></li>
-						</ul>
-					</li>
-					<li>
-						<h2>Exemples</h2>
-						<ul>
-							<li>
-								<pre>for (var i=0; i&lt;10; i++) { //10 itér.</pre>
-								<pre>  alert(i); // Affiche 0, 1...</pre>
-								<pre>}</pre>
-							</li>
-							<li>
-								<pre>var i=0;</pre>
-								<pre>while (i&lt;10) { //10 itérations</pre>
-								<pre>  alert(i); // Affiche 0, 1...</pre>
-								<pre>  i++;</pre>
-								<pre>}</pre>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</article>
-			<article id="fonctions">
-				<header>Les fonctions</header>
-				<ul class="body	centres-headers">
-					<li>
-						<h2>Déclaration</h2>
-						<div class="bloccode">
-							<div>function <cite>ident. fct</cite>(<cite>ident. var</cite><code class="separateur repeter">,</code>) {</div>
-							<div>  <cite>instructions</cite><code class="separateur repeter"></code></div>
-							<div>  return <cite>expression</cite></div>
-							<div>}</div>
+			</ul>
+		</article>
+		<article id="boucles">
+			<header>Les boucles</header>
+			<ul class="body">
+				<li>
+					<ul>
+						<li>
+							<pre>for (<cite>initialisation</cite>;<cite>condition</cite>;<cite>incrémentation</cite>)</pre>
+							<pre>{ <cite>instructions</cite> }</pre>
+						</li>
+						<li>
+							<pre>while (<cite>condition</cite>) { <cite>instructions</cite> }</pre>
+						</li>
+						<li>
+							<pre>do { <cite>instructions</cite> } while (<cite>condition</cite>);</pre>
+						</li>
+						<li>
+							<pre>for (<cite>variable</cite> in <cite>objet</cite>) { <cite>instructions</cite> }</pre>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2>Éléments (significations)</h2>
+					<ul>
+						<li><cite>initialisation</cite> : <code>var <cite class="signification">compteur</cite> = <cite class="signification">valeur de départ</cite></code></li>
+						<li><cite>condition</cite> : <code><cite class="signification">compteur</cite> &lt; <cite class="signification">valeur d'arrivée</cite></code></li>
+						<li><cite>incrémentation</cite> : <code><cite class="signification">compteur</cite>++</code></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Exemples</h2>
+					<ul>
+						<li>
+							<pre>for (var i=0; i&lt;10; i++) { //10 itér.</pre>
+							<pre>  alert(i); // Affiche 0, 1...</pre>
+							<pre>}</pre>
+						</li>
+						<li>
+							<pre>var i=0;</pre>
+							<pre>while (i&lt;10) { //10 itérations</pre>
+							<pre>  alert(i); // Affiche 0, 1...</pre>
+							<pre>  i++;</pre>
+							<pre>}</pre>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</article>
+		<article id="fonctions">
+			<header>Les fonctions</header>
+			<ul class="body	centres-headers">
+				<li>
+					<h2>Déclaration</h2>
+					<div class="bloccode">
+						<div>function <cite>ident. fct</cite>(<cite>ident. var</cite><code class="separateur repeter">,</code>) {</div>
+						<div>  <cite>instructions</cite><code class="separateur repeter"></code></div>
+						<div>  return <cite>expression</cite></div>
+						<div>}</div>
 
-						</div>
-					</li>
-					<li>
-						<h2>Appel</h2>
-						<div class="bloccode">var <cite class="ident">identificateur</cite> = <cite class="ident">ident. fct</cite>(<cite>expr.</cite>);</div>
-					</li>
-					<li>
-						<h2>Exemple</h2>
-						<div class="bloccode">
-							<div>function quotient(num, denum) {</div>
-							<div>  if (denum == 0) {</div>
-							<div>    return 0;</div>
-							<div>  }</div>
-							<div>  var calcul = num / denum;</div>
-							<div>  return calcul;</div>
-							<div>}</div>
-						</div>
-						<div>Plus loin dans le code</div>
-						<div class="bloccode">
-							<div>alert(quotient(5, 2)); // 2.5</div>
-						</div>
-					</li>
-<!--
-					<li>
-						<h2>Trace</h2>
-						<ol>
-							<li>Prend en note la présence d'une fonction <code>quotient</code>;</li>
-							<li>Saute par-dessus le corps de la fonction;</li>
-							<li>Exécute les instructions avant l'appel;</li>
-							<li>Prépare l'appel à la fonction <code>quotient</code>&nbsp;:
-								<ol>
-									<li>Déclare les variables des paramètres : <code>num</code> et <code>denum</code>;</li>
-									<li>Attribue la 1<sup>re</sup> valeur (<code>5</code>) de l'appel au 1<sup>er</sup> param. (<code>num</code>);</li>
-									<li>Attribue la 2<sup>e</sup> valeur (<code>2</code>) de l'appel au 2<sup>e</sup> param. (<code>denum</code>);</li>
-								</ol>
-							</li>
-							<li>Exécute le corps de la fonction <code>quotient</code>&nbsp;:
-								<ol>
-									<li>Le paramètre <code>num</code> vaut maintenant <code>5</code> et le paramètre <code>denum</code> vaut maintenant <code>2</code>.</li>
-									<li>Le parametre <code>denum</code> ne vaut pas <code>0</code>, la fonction ne retourne pas <code>0</code> et on ne termine pas l'execution de la fonction;</li>
-									<li>Execute la division <code>5/2</code> et attribue <code>2.5</code> à la variable <code>calcul</code>;</li>
-									<li>La fonction retourne la <strong>valeur</strong> de la variable <code>calcul</code>;</li>
-									<li>Les variables <code>num</code>, <code>denum</code> et <code>calcul</code> sont détruites;</li>
-								</ol>
-							</li>
-							<li>Termine l'appel de la fonction <code>quotient</code>&nbsp;:
-								<ol>
-									<li>Le code de l'appel (incluant les parenthèses) vaut maintenant <code>2.5</code>, car la fonction a retourné <code>2.5</code>;</li>
-									<li>La function <code>alert</code> utilise cette valeur et affiche <code>2.5</code>;</li>
-								</ol>
-							</li>
-						</ol>
-					</li>
--->
-				</ul>
-			</article>
-			<article id="chaines">
-				<header>Chaines de caractères (string)</header>
-				<ul class="body">
-					<li>
-						<h2>Création</h2>
-						<ul>
-							<li><code>var ma_chaine = "La chaine";</code></li>
-							<li><code>var ma_chaine = 'La chaine';</code></li>
-							<li class="es6"><code>var ma_chaine = `La chaine`;</code></li>
-						</ul>
-					</li>
-					<li>
-						<h2>Méthodes et propriétés</h2>
-						<ul>
-							<li>
-								<span class="terme">.length</span>
-								<span class="def">La longueur de la chaine</span>
-							</li>
-							<li>
-								<span class="terme">.charAt</span>
-								<span class="def"></span>
-							</li>
-							<li>
-								<span class="terme">.indexOf</span>
-								<span class="def"></span>
-							</li>
-							<li>
-								<span class="terme">.substr</span>
-								<span class="def"></span>
-							</li>
-							<li>
-								<span class="terme">.substring</span>
-								<span class="def"></span>
-							</li>
-							<li>
-								<span><span class="terme">.toUpperCase</span>
-								<br/>
-								<span class="terme">.toUpperCase</span></span>
-								<span class="def">La chaine en majuscules / minuscules.</span>
-							</li>
-							<li>
-								<span>
-									<span class="terme">.includes</span>
-								<span class="terme">.startsWith</span>
-								<br/>
-								<span class="terme">.endsWith</span>
-								<br/>
-								</span>
-								<span class="def">Vérifie la présence d'une sous-chaine.</span>
-							</li>
-							<li>
-								<span class="terme">.split</span>
-								<span class="def">Vérifie la présence d'une sous-chaine.</span>
-							</li>
-						</ul>
-					</li>
-					<li id="echapement">
-						<h2>Échappement</h2>
-						<ul>
-							<li><code>\'</code><span>Apostrophe</span></li>
-							<li><code>\"</code><span>Guillemet</span></li>
-							<li><code>\\</code><span>Backslash</span></li>
-							<li><code>\n</code><span>Nouvelle ligne</span></li>
-							<li><code>\r</code><span>Retour de chariot</span></li>
-							<li><code>\t</code><span>Tabulation</span></li>
-						</ul>
-					</li>
-				</ul>
-			</article>
-		</div>
+					</div>
+				</li>
+				<li>
+					<h2>Appel</h2>
+					<div class="bloccode">var <cite class="ident">identificateur</cite> = <cite class="ident">ident. fct</cite>(<cite>expr.</cite>);</div>
+				</li>
+				<li>
+					<h2>Exemple</h2>
+					<div class="bloccode">
+						<div>function quotient(num, denum) {</div>
+						<div>  if (denum == 0) {</div>
+						<div>    return 0;</div>
+						<div>  }</div>
+						<div>  var calcul = num / denum;</div>
+						<div>  return calcul;</div>
+						<div>}</div>
+					</div>
+					<div>Plus loin dans le code</div>
+					<div class="bloccode">
+						<div>alert(quotient(5, 2)); // 2.5</div>
+					</div>
+				</li>
+		<!--
+				<li>
+					<h2>Trace</h2>
+					<ol>
+						<li>Prend en note la présence d'une fonction <code>quotient</code>;</li>
+						<li>Saute par-dessus le corps de la fonction;</li>
+						<li>Exécute les instructions avant l'appel;</li>
+						<li>Prépare l'appel à la fonction <code>quotient</code>&nbsp;:
+							<ol>
+								<li>Déclare les variables des paramètres : <code>num</code> et <code>denum</code>;</li>
+								<li>Attribue la 1<sup>re</sup> valeur (<code>5</code>) de l'appel au 1<sup>er</sup> param. (<code>num</code>);</li>
+								<li>Attribue la 2<sup>e</sup> valeur (<code>2</code>) de l'appel au 2<sup>e</sup> param. (<code>denum</code>);</li>
+							</ol>
+						</li>
+						<li>Exécute le corps de la fonction <code>quotient</code>&nbsp;:
+							<ol>
+								<li>Le paramètre <code>num</code> vaut maintenant <code>5</code> et le paramètre <code>denum</code> vaut maintenant <code>2</code>.</li>
+								<li>Le parametre <code>denum</code> ne vaut pas <code>0</code>, la fonction ne retourne pas <code>0</code> et on ne termine pas l'execution de la fonction;</li>
+								<li>Execute la division <code>5/2</code> et attribue <code>2.5</code> à la variable <code>calcul</code>;</li>
+								<li>La fonction retourne la <strong>valeur</strong> de la variable <code>calcul</code>;</li>
+								<li>Les variables <code>num</code>, <code>denum</code> et <code>calcul</code> sont détruites;</li>
+							</ol>
+						</li>
+						<li>Termine l'appel de la fonction <code>quotient</code>&nbsp;:
+							<ol>
+								<li>Le code de l'appel (incluant les parenthèses) vaut maintenant <code>2.5</code>, car la fonction a retourné <code>2.5</code>;</li>
+								<li>La function <code>alert</code> utilise cette valeur et affiche <code>2.5</code>;</li>
+							</ol>
+						</li>
+					</ol>
+				</li>
+		-->
+			</ul>
+		</article>
+		<article id="definitions">
+			<header>Définitions</header>
+			<ul class="body">
+				<li><div><cite>déclaration</cite> : Annonce de l'utilisation éventuelle d'une variable. Utilise le mot-clé <code>var</code>.</div></li>
+				<li><div><cite>initialisation</cite> : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</div></li>
+				<li><div>itération : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</div></li>
+				<li><div><cite>expression</cite> : Portion de code pouvant être évaluée (avoir une valeur). On peut donc également déterminer son type de donnée.</div></li>
+				<li><div><cite>instruction</cite> : Étape individuelle d'exécution du programme. Se termine par un point-virgule. Pour être utile, une instruction doit modifier une variable ou occasionner un affichage.</div></li>
+				<li><div>opération</div></li>
+				<li><div><cite>condition</cite> : Expression pouvant être évaluée à <code>true</code> ou <code>false</code>.</div></li>
+				<li><div><cite>identificateur</cite> Mot unique désignant une variable, constante ou fonction.</div></li>
+			</ul>
+		</article>
+		<article id="vocabulaire">
+			<header>Vocabulaire</header>
+			<ul class="body">
+				<li><div>incrémenter : Augmenter de 1 la valeur d'une variable. Peut également désigner toute augmentation d'une variable, et même la décrémentation de celle-ci.</div></li>
+				<li><div>compteur : Variable qui tient le compte des itérations d'boucle.</div></li>
+				<li><div>accumulateur : Variable destinée à</div> </li>
+				<li><div>concaténation : Joindre diverses expressions pour former une chaine.</div></li>
+				<li><div>itération : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</div></li>
+			</ul>
+		</article>
 	</div>
-	<div class="page">
-		<div class="colonnes">
-			<article id="tableaux">
-				<header>Tableaux (array)</header>
-				<ul class="body">
-					<li>
-						<h2>Création</h2>
-						<ul>
-							<li>Vide : <code>var t = new Array()</code></li>
-							<li>Vide : <code>var t = []</code></li>
-							<li><code>var t = new Array(<cite>Expression</cite><code class="separateur repeter">,</code>)</code></li>
-							<li><code>var t = [<cite>Expression</cite><code class="separateur repeter">,</code>]</code></li>
-						</ul>
-					</li>
-					<li>
-						<h2>Modification</h2>
-						<ul class="splits">
-							<li><code>t.push(<cite>Expression</cite><code class="separateur">,</code>)</code> <span class="def">Ajoute à la fin</span></li>
-							<li><code>t.pop()</code> <span class="def">Retourne la dernière valeur et la retire du tableau</span></li>
-							<li><code>t.unshift(<cite>Expression</cite><code class="separateur">,</code>)</code> <span class="def">Ajoute au début</span></li>
-							<li><code>t.shift()</code> <span class="def">Retourne la première valeur <br/>et la retire du tableau</span></li>
+	<div class="page grille">
+		<article id="chaines">
+			<header>Chaines de caractères (string)</header>
+			<ul class="body">
+				<li>
+					<h2>Création</h2>
+					<ul>
+						<li><code>var ma_chaine = "La chaine";</code></li>
+						<li><code>var ma_chaine = 'La chaine';</code></li>
+						<li class="es6"><code>var ma_chaine = `La chaine`;</code></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Méthodes et propriétés</h2>
+					<ul>
+						<li>
+							<span class="terme">.length</span>
+							<span class="def">La longueur de la chaine</span>
+						</li>
+						<li>
+							<span class="terme">.charAt</span>
+							<span class="def"></span>
+						</li>
+						<li>
+							<span class="terme">.indexOf</span>
+							<span class="def"></span>
+						</li>
+						<li>
+							<span class="terme">.substr</span>
+							<span class="def"></span>
+						</li>
+						<li>
+							<span class="terme">.substring</span>
+							<span class="def"></span>
+						</li>
+						<li>
+							<span><span class="terme">.toUpperCase</span>
+							<br/>
+							<span class="terme">.toUpperCase</span></span>
+							<span class="def">La chaine en majuscules / minuscules.</span>
+						</li>
+						<li>
+							<span>
+								<span class="terme">.includes</span>
+							<span class="terme">.startsWith</span>
+							<br/>
+							<span class="terme">.endsWith</span>
+							<br/>
+							</span>
+							<span class="def">Vérifie la présence d'une sous-chaine.</span>
+						</li>
+						<li>
+							<span class="terme">.split</span>
+							<span class="def">Vérifie la présence d'une sous-chaine.</span>
+						</li>
+					</ul>
+				</li>
+				<li id="echapement">
+					<h2>Échappement</h2>
+					<ul>
+						<li><code>\'</code><span>Apostrophe</span></li>
+						<li><code>\"</code><span>Guillemet</span></li>
+						<li><code>\\</code><span>Backslash</span></li>
+						<li><code>\n</code><span>Nouvelle ligne</span></li>
+						<li><code>\r</code><span>Retour de chariot</span></li>
+						<li><code>\t</code><span>Tabulation</span></li>
+					</ul>
+				</li>
+			</ul>
+		</article>
+		<article id="tableaux">
+			<header>Tableaux (array)</header>
+			<ul class="body">
+				<li>
+					<h2>Création</h2>
+					<ul>
+						<li>Vide : <code>var t = new Array()</code></li>
+						<li>Vide : <code>var t = []</code></li>
+						<li><code>var t = new Array(<cite>Expression</cite><code class="separateur repeter">,</code>)</code></li>
+						<li><code>var t = [<cite>Expression</cite><code class="separateur repeter">,</code>]</code></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Modification</h2>
+					<ul class="splits">
+						<li><code>t.push(<cite>Expression</cite><code class="separateur">,</code>)</code> <span class="def">Ajoute à la fin</span></li>
+						<li><code>t.pop()</code> <span class="def">Retourne la dernière valeur et la retire du tableau</span></li>
+						<li><code>t.unshift(<cite>Expression</cite><code class="separateur">,</code>)</code> <span class="def">Ajoute au début</span></li>
+						<li><code>t.shift()</code> <span class="def">Retourne la première valeur <br/>et la retire du tableau</span></li>
 
-<!--							<li class="es6"><code>Array.from()</code><span class="def">...</span></li>-->
-<!--							<li class="es6"><code>Array.isArray()</code><span class="def">...</span></li>-->
-<!--							<li class="es6"><code>Array.observe()</code><span class="def">...</span></li>-->
-<!--							<li class="es6"><code>Array.of()</code><span class="def">...</span></li>-->
-							<li><code>t.concat(<cite class="donnee">array</cite><span class="separateur repeter">,</span>)</code><span class="def">Fusionne des tableaux</span></li>
-<!--							<li class="es6"><code>t.copyWithin()</code><span class="def">...</span></li>-->
-<!--							<li class="es6"><code>t.entries()</code><span class="def">...</span></li>-->
-<!--							<li class="es6"><code>t.fill()</code><span class="def">...</span></li>-->
-							<li><code>t.join(<cite class="donnee">string</cite>)</code><span class="def">Transforme en chaîne de caractères</span></li>
-							<li>
-								<div>
-									<div><code>t.indexOf(<cite>Expression</cite>)</code></div>
-									<div><code>t.lastIndexOf(<cite>Expression</cite>)</code></div>
-									<div><code>t.includes(<cite>Expression</cite>)</code></div>
-								</div>
-								<span class="def">Cherche dans<br>le tableau</span>
-							</li>
-<!--							<li class="skip"><code>t.keys()</code><span class="def">...</span></li>-->
-							<li><code>t.reverse()</code><span class="def">Inverse le tableau</span></li>
-							<li><code>t.slice(<em>debut</em>, <em>fin</em>)</code><span class="def">...</span></li>
-							<li><code>t.sort()</code><span class="def">...</span></li>
-							<li><code>t.splice(<em>debut</em>, <em>longueur</em>)</code><span class="def">...</span></li>
-<!--							<li class="skip"><code>t.toLocaleString()</code><span class="def">...</span></li>-->
-<!--							<li class="skip"><code>t.toSource()</code><span class="def">...</span></li>-->
-<!--							<li class="skip"><code>t.toString()</code><span class="def">...</span></li>-->
-<!--							<li class="skip"><code>t.values()</code><span class="def">...</span></li>-->
-						</ul>
-					</li>
-<!--
-					<li>
-						<h2>Parcourir</h2>
-						<ul>
-							<li class="callback">
-								<div><code>t.every()</code></div>
-								<div><code>t.some()</code></div>
-							</li>
-							<li class="callback">
-								<div><code>t.find()</code></div>
-								<div><code>t.findIndex()</code></div>
-							</li>
-							<li class="callback"><code>t.forEach()</code></li>
-							<li class="callback">
-								<div><code>t.map()</code></div>
-								<div><code>t.reduce()</code></div>
-								<div><code>t.reduceRight()</code></div>
-								<div><code>t.filter()</code></div>
-							</li>
-						</ul>
-					</li>
--->
-				</ul>
-			</article>
-			<article id="definitions">
-				<header>Définitions</header>
-				<ul class="body">
-					<li><div><cite>déclaration</cite> : Annonce de l'utilisation éventuelle d'une variable. Utilise le mot-clé <code>var</code>.</div></li>
-					<li><div><cite>initialisation</cite> : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</div></li>
-					<li><div>itération : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</div></li>
-					<li><div><cite>expression</cite> : Portion de code pouvant être évaluée (avoir une valeur). On peut donc également déterminer son type de donnée.</div></li>
-					<li><div><cite>instruction</cite> : Étape individuelle d'exécution du programme. Se termine par un point-virgule. Pour être utile, une instruction doit modifier une variable ou occasionner un affichage.</div></li>
-					<li><div>opération</div></li>
-					<li><div><cite>condition</cite> : Expression pouvant être évaluée à <code>true</code> ou <code>false</code>.</div></li>
-					<li><div><cite>identificateur</cite> Mot unique désignant une variable, constante ou fonction.</div></li>
-				</ul>
-			</article>
-			<article id="vocabulaire">
-				<header>Vocabulaire</header>
-				<ul class="body">
-					<li><div>incrémenter : Augmenter de 1 la valeur d'une variable. Peut également désigner toute augmentation d'une variable, et même la décrémentation de celle-ci.</div></li>
-					<li><div>compteur : Variable qui tient le compte des itérations d'boucle.</div></li>
-					<li><div>accumulateur : Variable destinée à</div> </li>
-					<li><div>concaténation : Joindre diverses expressions pour former une chaine.</div></li>
-					<li><div><cite>déclaration</cite> : Annoncer l'utilisation éventuelle d'une variable. Utilise le mot-clé <code>var</code>.</div></li>
-					<li><div><cite>initialisation</cite> : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</div></li>
-					<li><div>itération : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</div></li>
-				</ul>
-			</article>
-			<article id="math">
-				<header>L'objet Math</header>
-				<ul class="body">
-					<li>
-						<h2>Base</h2>
-						<ul>
-							<li><code>Math.floor()</code></li>
-							<li><code>Math.ceil()</code></li>
-							<li><code>Math.random()</code></li>
-							<li><code>Math.round()</code></li>
-							<li><code>Math.sign()</code></li>
-							<li><code>Math.abs()</code></li>
-							<li><code>Math.hypot()</code></li>
-							<li><code>Math.max()</code></li>
-							<li><code>Math.min()</code></li>
-						</ul>
-					</li>
-					<li>
-						<h2>Exposants</h2>
-						<ul>
-							<li><code>Math.pow()</code></li>
-							<li><code>Math.sqrt()</code></li>
-							<li><code>Math.cbrt()</code></li>
-							<li><code>Math.exp()</code></li>
-							<li><code>Math.hypot()</code></li>
-							<li><code>Math.log()</code></li>
-<!--
-							<li class="es6"><code>Math.clz32()</code></li>
-							<li class="es6"><code>Math.expm1()</code></li>
-							<li class="es6"><code>Math.fround()</code></li>
-							<li class="es6"><code>Math.imul()</code></li>
-							<li class="es6"><code>Math.log10()</code></li>
-							<li class="es6"><code>Math.log1p()</code></li>
-							<li class="es6"><code>Math.log2()</code></li>
-							<li class="es6"><code>Math.trunc()</code></li>
--->
-						</ul>
-					</li>
-					<li>
-						<h2>Trigonométrie</h2>
-						<ul>
-							<li><code>Math.cos()</code>, <code>Math.sin()</code>, <code>Math.tan()</code></li>
-							<li><code>Math.acos()</code></li>
-							<li><code>Math.asin()</code></li>
-							<li><code>Math.atan()</code></li>
-							<li><code>Math.atan2()</code></li>
-<!--
-							<li class="es6"><code>Math.acosh()</code></li>
-							<li class="es6"><code>Math.asinh()</code></li>
-							<li class="es6"><code>Math.atanh()</code></li>
-							<li class="es6"><code>Math.cosh()</code></li>
-							<li class="es6"><code>Math.sinh()</code></li>
-							<li class="es6"><code>Math.tanh()</code></li>
--->
-						</ul>
-					</li>
-				</ul>
-			</article>
-			<article id="dom">
-				<header>Le DOM</header>
-				<ul class="body">
-					<li><code>.getElementById</code></li>
-				</ul>
-			</article>
-			<article id="formulaires">
-				<header>Les formulaires</header>
-				<ul class="body">
-					<li><code>.getElementById</code></li>
-				</ul>
-			</article>
-			<article id="evenements">
-				<header>Les événements</header>
-				<ul class="body">
-					<li><code>.onclick()</code></li>
-					<li><code>.addEventListener()</code></li>
-				</ul>
-			</article>
+		<!--							<li class="es6"><code>Array.from()</code><span class="def">...</span></li>-->
+		<!--							<li class="es6"><code>Array.isArray()</code><span class="def">...</span></li>-->
+		<!--							<li class="es6"><code>Array.observe()</code><span class="def">...</span></li>-->
+		<!--							<li class="es6"><code>Array.of()</code><span class="def">...</span></li>-->
+						<li><code>t.concat(<cite class="donnee">array</cite><span class="separateur repeter">,</span>)</code><span class="def">Fusionne des tableaux</span></li>
+		<!--							<li class="es6"><code>t.copyWithin()</code><span class="def">...</span></li>-->
+		<!--							<li class="es6"><code>t.entries()</code><span class="def">...</span></li>-->
+		<!--							<li class="es6"><code>t.fill()</code><span class="def">...</span></li>-->
+						<li><code>t.join(<cite class="donnee">string</cite>)</code><span class="def">Transforme en chaîne de caractères</span></li>
+						<li>
+							<div>
+								<div><code>t.indexOf(<cite>Expression</cite>)</code></div>
+								<div><code>t.lastIndexOf(<cite>Expression</cite>)</code></div>
+								<div><code>t.includes(<cite>Expression</cite>)</code></div>
+							</div>
+							<span class="def">Cherche dans<br>le tableau</span>
+						</li>
+		<!--							<li class="skip"><code>t.keys()</code><span class="def">...</span></li>-->
+						<li><code>t.reverse()</code><span class="def">Inverse le tableau</span></li>
+						<li><code>t.slice(<em>debut</em>, <em>fin</em>)</code><span class="def">...</span></li>
+						<li><code>t.sort()</code><span class="def">...</span></li>
+						<li><code>t.splice(<em>debut</em>, <em>longueur</em>)</code><span class="def">...</span></li>
+		<!--							<li class="skip"><code>t.toLocaleString()</code><span class="def">...</span></li>-->
+		<!--							<li class="skip"><code>t.toSource()</code><span class="def">...</span></li>-->
+		<!--							<li class="skip"><code>t.toString()</code><span class="def">...</span></li>-->
+		<!--							<li class="skip"><code>t.values()</code><span class="def">...</span></li>-->
+					</ul>
+				</li>
+		<!--
+				<li>
+					<h2>Parcourir</h2>
+					<ul>
+						<li class="callback">
+							<div><code>t.every()</code></div>
+							<div><code>t.some()</code></div>
+						</li>
+						<li class="callback">
+							<div><code>t.find()</code></div>
+							<div><code>t.findIndex()</code></div>
+						</li>
+						<li class="callback"><code>t.forEach()</code></li>
+						<li class="callback">
+							<div><code>t.map()</code></div>
+							<div><code>t.reduce()</code></div>
+							<div><code>t.reduceRight()</code></div>
+							<div><code>t.filter()</code></div>
+						</li>
+					</ul>
+				</li>
+		-->
+			</ul>
+		</article>
+		<article id="math">
+			<header>L'objet Math</header>
+			<ul class="body">
+				<li>
+					<h2>Base</h2>
+					<ul>
+						<li><code>Math.floor()</code></li>
+						<li><code>Math.ceil()</code></li>
+						<li><code>Math.random()</code></li>
+						<li><code>Math.round()</code></li>
+						<li><code>Math.sign()</code></li>
+						<li><code>Math.abs()</code></li>
+						<li><code>Math.hypot()</code></li>
+						<li><code>Math.max()</code></li>
+						<li><code>Math.min()</code></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Exposants</h2>
+					<ul>
+						<li><code>Math.pow()</code></li>
+						<li><code>Math.sqrt()</code></li>
+						<li><code>Math.cbrt()</code></li>
+						<li><code>Math.exp()</code></li>
+						<li><code>Math.hypot()</code></li>
+						<li><code>Math.log()</code></li>
+		<!--
+						<li class="es6"><code>Math.clz32()</code></li>
+						<li class="es6"><code>Math.expm1()</code></li>
+						<li class="es6"><code>Math.fround()</code></li>
+						<li class="es6"><code>Math.imul()</code></li>
+						<li class="es6"><code>Math.log10()</code></li>
+						<li class="es6"><code>Math.log1p()</code></li>
+						<li class="es6"><code>Math.log2()</code></li>
+						<li class="es6"><code>Math.trunc()</code></li>
+		-->
+					</ul>
+				</li>
+				<li>
+					<h2>Trigonométrie</h2>
+					<ul>
+						<li><code>Math.cos()</code>, <code>Math.sin()</code>, <code>Math.tan()</code></li>
+						<li><code>Math.acos()</code></li>
+						<li><code>Math.asin()</code></li>
+						<li><code>Math.atan()</code></li>
+						<li><code>Math.atan2()</code></li>
+		<!--
+						<li class="es6"><code>Math.acosh()</code></li>
+						<li class="es6"><code>Math.asinh()</code></li>
+						<li class="es6"><code>Math.atanh()</code></li>
+						<li class="es6"><code>Math.cosh()</code></li>
+						<li class="es6"><code>Math.sinh()</code></li>
+						<li class="es6"><code>Math.tanh()</code></li>
+		-->
+					</ul>
+				</li>
+			</ul>
+		</article>
+		<article id="dom">
+			<header>Le DOM</header>
+			<ul class="body">
+				<li><code>.getElementById</code></li>
+			</ul>
+		</article>
+		<article id="formulaires">
+			<header>Les formulaires</header>
+			<ul class="body">
+				<li><code>.getElementById</code></li>
+			</ul>
+		</article>
+		<article id="evenements">
+			<header>Les événements</header>
+			<ul class="body">
+				<li><code>.onclick()</code></li>
+				<li><code>.addEventListener()</code></li>
+			</ul>
+		</article>
 
 
-			<article>
-				<header>Légende</header>
-				<ul class="body">
-					<li><div><code>Texte courrier noir</code> : À utiliser tel quel.</div></li>
-					<li><div><cite>Bulle bleue</cite> : Concept défini ailleurs</div></li>
-					<li><div><cite class="signification">Bulle blanche</cite> : Signification spécifique d'une expression.</div></li>
-					<li><div><code class="separateur repeter">,</code> Séparateur : Ce qui précède le séparateur peut se répéter en le séparant par ce caractère.</div></li>
-				</ul>
-			</article>
-			<article>
-				<ul>
-					<li>@2018 Martin Boudreau</li>
-				</ul>
-			</article>
+		<article>
+			<header>Légende</header>
+			<ul class="body">
+				<li><div><code>Texte courrier noir</code> : À utiliser tel quel.</div></li>
+				<li><div><cite>Bulle bleue</cite> : Concept défini ailleurs</div></li>
+				<li><div><cite class="signification">Bulle blanche</cite> : Signification spécifique d'une expression.</div></li>
+				<li><div><code class="separateur repeter">,</code> Séparateur : Ce qui précède le séparateur peut se répéter en le séparant par ce caractère.</div></li>
+			</ul>
+		</article>
+		<article>
+			<ul>
+				<li>@2018 Martin Boudreau</li>
+			</ul>
+		</article>
 
-			<!--			<div>* Avec exception</div>-->
-			<!--			section>header+ul.body>li-->
-		</div>
+		<!--			<div>* Avec exception</div>-->
+		<!--			section>header+ul.body>li-->
 	</div>
 </body>
 

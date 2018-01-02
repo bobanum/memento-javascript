@@ -127,19 +127,7 @@ html {
   flex: 1 1 auto;
   text-align: right;
 }
-div.colonnes {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-  height: 100%;
-}
-div.colonnes > * {
-  flex: 1 0 auto;
-  width: 2.4in;
-}
-div.colonnes > header {
+div.page > header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,20 +138,19 @@ div.colonnes > header {
   border-radius: 7pt;
   color: white;
   padding-bottom: 3pt;
-  margin-bottom: 7pt;
   font-size: 50px;
 }
-div.colonnes > header h1 {
+div.page > header h1 {
   font-size: inherit;
   margin: 0;
   text-transform: uppercase;
 }
-div.colonnes > header h1:first-child {
+div.page > header h1:first-child {
   font-stretch: expanded;
   font-size: 57%;
   color: #6f916f;
 }
-div.colonnes > header h1:last-child {
+div.page > header h1:last-child {
   line-height: .8;
 }
 article {
@@ -173,7 +160,6 @@ article {
   border: 1pt solid #336633;
   border-radius: 0.5em;
   overflow: hidden;
-  margin-bottom: 0.5em;
   box-shadow: 2px 0px -1px #336633;
 }
 article > * {
@@ -193,10 +179,13 @@ article > footer {
   order: 1000;
 }
 article > header {
+  margin: 0 -1pt;
+  margin-top: -1pt;
+  padding: 0 1pt;
   background-color: #336633;
   color: white;
   line-height: 1;
-  padding: 1pt 3pt 2pt;
+  padding: 2pt 4pt 2pt;
   font-weight: 400;
   font-stretch: normal;
 }
