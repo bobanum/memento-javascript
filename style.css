@@ -59,6 +59,47 @@
   justify-content: space-between;
   align-items: center;
 }
+.prefixer {
+  display: flex;
+  flex-direction: row;
+  padding: 2pt;
+}
+.prefixer > *:first-child {
+  letter-spacing: 0;
+  font-family: "times new roman";
+  font-style: italic;
+  color: white;
+  background-color: #6f916f;
+  padding: 0 .25em;
+  border: 0.5pt solid #6f916f;
+  border-radius: 1em;
+  font-size: smaller;
+  font-weight: bold;
+  white-space: nowrap;
+  line-height: 1em;
+  padding-bottom: .2em;
+  vertical-align: middle;
+  border-width: .5pt 2pt;
+  color: #6f916f;
+  background-color: white;
+  border-width: 1px;
+  flex: 0 0 .6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: .8em;
+  margin-right: -4pt;
+  position: relative;
+}
+.prefixer > *:first-child > * {
+  position: absolute;
+  transform: rotate(-90deg);
+}
+.prefixer > *:last-child {
+  flex: 1 1 auto;
+}
+/*
+*/
 html {
   font-size: 1rem;
   font-family: "mesmerize", "babel-sans", "arial narrow", arial;
@@ -293,9 +334,10 @@ span.terme {
   float: left;
   width: 4em;
 }
-cite {
+.pastille {
   letter-spacing: 0;
   font-family: "times new roman";
+  font-style: italic;
   color: white;
   background-color: #6f916f;
   padding: 0 .25em;
@@ -309,15 +351,32 @@ cite {
   vertical-align: middle;
   border-width: .5pt 2pt;
 }
-cite.signification {
+.signification {
   color: #6f916f;
   background-color: white;
   margin: -1px;
 }
-cite.donnee {
+.donnee {
   color: #6f916f;
   background-color: white;
   border-width: 1px;
+}
+cite {
+  letter-spacing: 0;
+  font-family: "times new roman";
+  font-style: italic;
+  color: white;
+  background-color: #6f916f;
+  padding: 0 .25em;
+  border: 0.5pt solid #6f916f;
+  border-radius: 1em;
+  font-size: smaller;
+  font-weight: bold;
+  white-space: nowrap;
+  line-height: 1em;
+  padding-bottom: .2em;
+  vertical-align: middle;
+  border-width: .5pt 2pt;
 }
 code.separateur {
   border-color: #6f916f;

@@ -296,13 +296,11 @@
 		</article>
 		<article id="definitions">
 			<header>Définitions</header>
-			<ul class="body">
+			<ul class="body centres-verticaux">
 				<li><div><cite>déclaration</cite> : Annonce de l'utilisation éventuelle d'une variable. Utilise le mot-clé <code>var</code>.</div></li>
 				<li><div><cite>initialisation</cite> : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</div></li>
-				<li><div>itération : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</div></li>
 				<li><div><cite>expression</cite> : Portion de code pouvant être évaluée (avoir une valeur). On peut donc également déterminer son type de donnée.</div></li>
 				<li><div><cite>instruction</cite> : Étape individuelle d'exécution du programme. Se termine par un point-virgule. Pour être utile, une instruction doit modifier une variable ou occasionner un affichage.</div></li>
-				<li><div>opération</div></li>
 				<li><div><cite>condition</cite> : Expression pouvant être évaluée à <code>true</code> ou <code>false</code>.</div></li>
 				<li><div><cite>identificateur</cite> Mot unique désignant une variable, constante ou fonction.</div></li>
 			</ul>
@@ -310,11 +308,12 @@
 		<article id="vocabulaire">
 			<header>Vocabulaire</header>
 			<ul class="body">
+				<li><div>itération : Chaque exécution d'une boucle.</div></li>
 				<li><div>incrémenter : Augmenter de 1 la valeur d'une variable. Peut également désigner toute augmentation d'une variable, et même la décrémentation de celle-ci.</div></li>
 				<li><div>compteur : Variable qui tient le compte des itérations d'boucle.</div></li>
 				<li><div>accumulateur : Variable destinée à</div> </li>
 				<li><div>concaténation : Joindre diverses expressions pour former une chaine.</div></li>
-				<li><div>itération : Attribution de la valeur initiale d'une variable. Est habituellement jumelée à la déclaration.</div></li>
+				<li><div>opération</div></li>
 			</ul>
 		</article>
 	</div>
@@ -518,16 +517,41 @@
 				</li>
 			</ul>
 		</article>
+		<article id="fonctions_base">
+			<header>Fonctions de base</header>
+			<ul class="body">
+				<li><div><code>alert()</code></div></li>
+				<li><div><code>prompt()</code></div></li>
+				<li><div><code>confirm()</code></div></li>
+				<li><div><code>parseInt()</code></div></li>
+				<li><div><code>parseFloat()</code></div></li>
+				<li><div><code>.toString()</code></div></li>
+				<li><div><code>.toFixed()</code></div></li>
+			</ul>
+		</article>
 		<article id="dom">
 			<header>Le DOM</header>
-			<ul class="body">
-				<li><code>.getElementById</code></li>
-			</ul>
+			<div class="prefixer">
+				<div><span>HTMLElement</span></div>
+				<ul class="body centres-verticaux">
+					<li><div><code>.getElementById(<cite class="donnee">string▸id</cite>)</code></div></li>
+					<li><div><code>.querySelector(<cite class="donnee">string▸sélecteur</cite>)</code></div></li>
+					<li><div><code>.querySelectorAll(<cite class="donnee">string▸sélecteur</cite>)</code></div></li>
+					<li><div><code>.parentNode</code></div></li>
+					<li><div><code>.nextSibling</code></div></li>
+					<li><div><code>.appendChild(<cite class="donnee">HTMLElement</cite>)</code></div></li>
+					<li><div><code>.createElement(<cite class="donnee">string</cite>)</code></div></li>
+					<li><div><code>.innerHTML</code></div></li>
+					<li><div><code>.getAttribute</code></div></li>
+					<li><div><code>.className</code></div></li>
+					<li><div><code>.style</code></div></li>
+				</ul>
+			</div>
 		</article>
 		<article id="formulaires">
 			<header>Les formulaires</header>
 			<ul class="body">
-				<li><code>.getElementById</code></li>
+				<li><code>.value</code></li>
 			</ul>
 		</article>
 		<article id="evenements">
@@ -539,7 +563,7 @@
 		</article>
 
 
-		<article>
+		<article id="legende">
 			<header>Légende</header>
 			<ul class="body">
 				<li><div><code>Texte courrier noir</code> : À utiliser tel quel.</div></li>
@@ -548,8 +572,8 @@
 				<li><div><code class="separateur repeter">,</code> Séparateur : Ce qui précède le séparateur peut se répéter en le séparant par ce caractère.</div></li>
 			</ul>
 		</article>
-		<article>
-			<ul>
+		<article id="copyright" class="centre">
+			<ul class="centre">
 				<li>@2018 Martin Boudreau</li>
 			</ul>
 		</article>

@@ -62,6 +62,32 @@
 		.split;
 	}
 }
+.prefixer {
+	display: flex;
+	flex-direction: row;
+	padding: 2pt;
+	& > *:first-child {
+		.pastille;
+		.donnee;
+		flex: 0 0 .6em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: .8em;
+		margin-right: -4pt;
+		position: relative;
+		& > * {
+			position: absolute;
+			transform: rotate(-90deg);
+		}
+	}
+	& > *:last-child {
+		flex: 1 1 auto;
+	}
+}
+/*
+*/
+
 html {
 	.police-base;
 	font-size: 9pt;
@@ -256,9 +282,10 @@ span.terme {
 	float: left;
 	width: 4em;
 }
-cite {
+.pastille {
 	letter-spacing: 0;
 	font-family: "times new roman";
+	font-style: italic;
 	color: white;
 	background-color: @couleur-pastille;
 	padding: 0 .25em;
@@ -271,16 +298,19 @@ cite {
 	padding-bottom: .2em;
 	vertical-align: middle;
 	border-width: .5pt 2pt;
-	&.signification {
-		color: @couleur-pastille;
-		background-color: white;
-		margin: -1px;
-	}
-	&.donnee {
-		color: @couleur-pastille;
-		background-color: white;
-		border-width: 1px;
-	}
+}
+.signification {
+	color: @couleur-pastille;
+	background-color: white;
+	margin: -1px;
+}
+.donnee {
+	color: @couleur-pastille;
+	background-color: white;
+	border-width: 1px;
+}
+cite {
+	.pastille;
 }
 code.separateur {
 	border-color: @couleur-pastille;
