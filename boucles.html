@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="page.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<title>Les boucles</title>
+</head>
+
+<body>
+	<div class="page grille">
+		<article id="boucles">
+			<header>Les boucles</header>
+			<ul class="body">
+				<li>
+					<ul>
+						<li>
+							<pre>for (<cite>init.</cite>;<cite>condition</cite>;<cite>incr.</cite>)</pre>
+							<pre>{ <cite>instructions</cite> }</pre>
+						</li>
+						<li>
+							<pre>while (<cite>condition</cite>) { <cite>instructions</cite> }</pre>
+						</li>
+<!--
+						<li>
+							<pre>do { <cite>instructions</cite> } while (<cite>condition</cite>);</pre>
+						</li>
+-->
+<!--
+						<li>
+							<pre>for (<cite>variable</cite> in <cite>objet</cite>) { <cite>instructions</cite> }</pre>
+						</li>
+-->
+					</ul>
+				</li>
+				<li>
+					<h2>Éléments (significations)</h2>
+					<ul>
+						<li><cite>init.</cite> : <code>var <cite class="donnee">compteur</cite> = <cite class="donnee">val. de départ</cite></code></li>
+						<li><cite>cond.</cite> : <code><cite class="donnee">compteur</cite> &lt; <cite class="donnee">val. d'arrivée</cite></code></li>
+						<li><cite>incr.</cite> : <code><cite class="donnee">compteur</cite>++</code></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Exemples</h2>
+					<ul>
+						<li>
+							<pre>for (var i=0; i&lt;10; i++) { //10 itér.</pre>
+							<pre>  alert(i); // Affiche 0, 1...</pre>
+							<pre>}</pre>
+						</li>
+						<li>
+							<pre>var i=0;</pre>
+							<pre>while (i&lt;10) { //10 itérations</pre>
+							<pre>  alert(i); // Affiche 0, 1...</pre>
+							<pre>  i++;</pre>
+							<pre>}</pre>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</article>
+	</div>
+</body>
+
+</html>

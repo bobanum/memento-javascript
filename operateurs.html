@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="page.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<title>Opérateurs</title>
+</head>
+
+<body>
+	<div class="page grille">
+		<article id="operateurs">
+			<header>Opérateurs</header>
+			<ul class="body">
+				<li>
+					<h2>Règles générales</h2>
+					<div>Deux expressions ne peuvent jamais être directement juxtaposées. Un opérateur doit s'interpose entre ces deux expressions pour en donner une troisième. Une opération peut donc également être évaluée.</div>
+					<div>Syntaxe : <cite>expression</cite> <cite>opérateur</cite> <cite>expression</cite></div>
+					<h2>Opérateurs mathématiques</h2>
+					<ul>
+						<li><code>+</code> <span class="def">addition</span>, <code>-</code> <span class="def">soustraction</span></li>
+						<li><code>*</code> <span class="def">multiplication</span>, <code>/</code> <span class="def">division</span>, <code>%</code> <span class="def">modulo</span></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Opérateurs de comparaison</h2>
+					<ul>
+						<li><code>&lt;</code> <span class="def">plus petit</span>, <code>&lt;=</code> <span class="def">plus petit ou égal</span></li>
+						<li><code>&gt;</code> <span class="def">plus grand</span>, <code>&gt;=</code> <span class="def">plus grand ou égal</span></li>
+						<li><code>==</code> <span class="def">égal</span>, <code>===</code> <span class="def">strictement égal</span></li>
+						<li><code>!=</code> <span class="def">différent</span>, <code>!==</code> <span class="def">strictement différent</span></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Opérateur de chaine</h2>
+					<ul>
+						<li><code>+</code> <span class="def">concaténation</span></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Opérateurs booléens et de bits</h2>
+					<ul>
+						<li><code>&amp;&amp;</code> <span class="def">ET logique</span>, <code>||</code> <span class="def">OU logique</span></li>
+						<li><code>&amp;</code> <span class="def">ET binaire</span>, <code>|</code> <span class="def">OU binaire</span>, <code>^</code> <span class="def">OU exclusif binaire</span></li>
+						<li><code>&lt;&lt;</code> <span class="def">décalage gauche</span>, <code>&gt;&gt;</code> <span class="def">décalage droite</span></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Opérateurs d'attribution</h2>
+					<div>Syntaxe: <cite>variable</cite> <cite>opérateur</cite> <cite>expression</cite></div>
+					<ul>
+						<li><code>=</code> <span class="def">Attribution. Met la valeur de l'expression dans la variable.</span></li>
+						<li><code>+=</code> <span class="def">Accumulation. Ajoute à la valeur actuelle de la variable celle de l'expression.</span>
+							<div>Les opérateurs <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code>, <code>&amp;=</code>, <code>|=</code>, <code>~=</code>, <code>&lt;&lt;=</code>, <code>&gt;&gt;=</code> ont un fonctionnement similaire.</div>
+						</li>
+						<li><code>++</code><cite>variable</cite>,<cite>variable</cite><code>++</code> <span class="def">pré et post incrémentation</span></li>
+						<li><code>--</code><cite>variable</cite>,<cite>variable</cite><code>--</code> <span class="def">pré et post décrémentation</span></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Opérateurs unitaires</h2>
+					<div>Syntaxe: <cite>opérateur</cite> <cite>expression</cite></div>
+					<ul>
+						<li><code>+</code> <span class="def">positif</span></li>
+						<li><code>-</code> <span class="def">négatif. Inverse le signe</span></li>
+						<li><code>!</code> <span class="def">négation. Inverse la valeur booléenne.</span></li>
+						<li><code>~</code> <span class="def">inversion de bits</span></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Opérateur ternaire</h2>
+					<div>Syntaxe:
+						<div>
+							<code>(</code><cite>condition</cite><code>)</code> <code>?</code> <cite class="donnee">valeur si true</cite> : <cite class="donnee">valeur si false</cite>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</article>
+	</div>
+</body>
+
+</html>

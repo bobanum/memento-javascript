@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="page.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<title>Chaines de caractères (string)</title>
+</head>
+
+<body>
+	<div class="page grille">
+		<article id="chaines">
+			<header>Chaines de caractères (string)</header>
+			<ul class="body">
+				<li>
+					<h2>Création</h2>
+					<ul>
+						<li><code>var s = "La chaine";</code></li>
+						<li><code>var s = 'La chaine';</code></li>
+						<li class="es6"><code>var s = `La chaine`;</code></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Méthodes et propriétés</h2>
+					<ul class="splits">
+						<li>
+							<code>s.length</code>
+							<span class="def">La longueur de la chaine</span>
+						</li>
+						<li>
+							<code>s.charAt(<cite class="donnee">indice</cite>)</code>
+							<span class="def">Le caractère à une position</span>
+						</li>
+						<li>
+							<code>s.indexOf(<cite class="donnee">string</cite>)</code>
+							<span class="def">La position d'une sous-chaine</span>
+						</li>
+						<li>
+							<code>s.substr(<cite class="donnee">debut</cite>,<cite class="donnee optionnel">longueur</cite>)</code>
+							<span class="def">Une sous-chaine à partir d'un début avec une longueur</span>
+						</li>
+						<li>
+							<code>s.substring(<cite class="donnee">debut</cite>,<cite class="donnee optionnel">fin</cite>)</code>
+							<span class="def">Une sous-chaine partant d'un début jusqu'à une fin -1</span>
+						</li>
+						<li>
+							<span><code>s.toUpperCase()</code>
+							<br/>
+							<code>s.toLowerCase()</code></span>
+							<span class="def">La chaine en majuscules / minuscules.</span>
+						</li>
+						<li>
+							<span>
+								<code>s.includes(<cite class="donnee">string</cite>)</code>
+							<code>s.startsWith(<cite class="donnee">string</cite>)</code>
+							<br/>
+							<code>s.endsWith(<cite class="donnee">string</cite>)</code>
+							<br/>
+							</span>
+							<span class="def">Vérifie la présence d'une sous-chaine. (boolean)</span>
+						</li>
+						<li>
+							<code>.split(<cite class="donnee">separateur</cite>)</code>
+							<span class="def">Un tableau des sous-chaines</span>
+						</li>
+					</ul>
+				</li>
+				<li id="echapement">
+					<h2>Échappement</h2>
+					<ul>
+						<li><code>\'</code><span>Apostrophe</span></li>
+						<li><code>\"</code><span>Guillemet</span></li>
+						<li><code>\\</code><span>Backslash</span></li>
+						<li><code>\n</code><span>Nouvelle ligne</span></li>
+						<li><code>\r</code><span>Retour de chariot</span></li>
+						<li><code>\t</code><span>Tabulation</span></li>
+					</ul>
+				</li>
+			</ul>
+		</article>
+	</div>
+</body>
+
+</html>

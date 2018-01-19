@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="page.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<title>Les fonctions</title>
+</head>
+
+<body>
+	<div class="page grille">
+		<article id="fonctions" style="grid-row: span 6;">
+			<header>Les fonctions</header>
+			<ul class="body	centres-headers">
+				<li>
+					<h2>Déclaration</h2>
+					<div class="bloccode">
+						<div>function <cite>ident. fct</cite>(<cite>ident. var</cite><code class="separateur repeter">,</code>) {</div>
+						<div> <cite>instructions</cite><code class="separateur repeter"></code></div>
+						<div> return <cite>expression</cite></div>
+						<div>}</div>
+
+					</div>
+				</li>
+				<li>
+					<h2>Appel</h2>
+					<div class="bloccode">var <cite class="ident">identificateur</cite> = <cite class="ident">ident. fct</cite>(<cite>expr.</cite>);</div>
+				</li>
+				<li>
+					<h2>Exemple</h2>
+					<div class="bloccode">
+						<div>function quotient(num, denum) {</div>
+						<div>  if (denum == 0) {</div>
+						<div>    return 0;</div>
+						<div>  }</div>
+						<div>  var calcul = num / denum;</div>
+						<div>  return calcul;</div>
+						<div>}</div>
+					</div>
+					<div>Plus loin dans le code</div>
+					<div class="bloccode">
+						<div>alert(quotient(5, 2)); // 2.5</div>
+					</div>
+				</li>
+				<!--
+				<li>
+					<h2>Trace</h2>
+					<ol>
+						<li>Prend en note la présence d'une fonction <code>quotient</code>;</li>
+						<li>Saute par-dessus le corps de la fonction;</li>
+						<li>Exécute les instructions avant l'appel;</li>
+						<li>Prépare l'appel à la fonction <code>quotient</code>&nbsp;:
+							<ol>
+								<li>Déclare les variables des paramètres : <code>num</code> et <code>denum</code>;</li>
+								<li>Attribue la 1<sup>re</sup> valeur (<code>5</code>) de l'appel au 1<sup>er</sup> param. (<code>num</code>);</li>
+								<li>Attribue la 2<sup>e</sup> valeur (<code>2</code>) de l'appel au 2<sup>e</sup> param. (<code>denum</code>);</li>
+							</ol>
+						</li>
+						<li>Exécute le corps de la fonction <code>quotient</code>&nbsp;:
+							<ol>
+								<li>Le paramètre <code>num</code> vaut maintenant <code>5</code> et le paramètre <code>denum</code> vaut maintenant <code>2</code>.</li>
+								<li>Le parametre <code>denum</code> ne vaut pas <code>0</code>, la fonction ne retourne pas <code>0</code> et on ne termine pas l'execution de la fonction;</li>
+								<li>Execute la division <code>5/2</code> et attribue <code>2.5</code> à la variable <code>calcul</code>;</li>
+								<li>La fonction retourne la <strong>valeur</strong> de la variable <code>calcul</code>;</li>
+								<li>Les variables <code>num</code>, <code>denum</code> et <code>calcul</code> sont détruites;</li>
+							</ol>
+						</li>
+						<li>Termine l'appel de la fonction <code>quotient</code>&nbsp;:
+							<ol>
+								<li>Le code de l'appel (incluant les parenthèses) vaut maintenant <code>2.5</code>, car la fonction a retourné <code>2.5</code>;</li>
+								<li>La function <code>alert</code> utilise cette valeur et affiche <code>2.5</code>;</li>
+							</ol>
+						</li>
+					</ol>
+				</li>
+		-->
+			</ul>
+		</article>
+	</div>
+</body>
+
+</html>

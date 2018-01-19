@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="page.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<title>Tableaux</title>
+</head>
+
+<body>
+	<div class="page grille">
+		<article id="tableaux" style="grid-row: span 14;">
+			<header>Tableaux (array)</header>
+			<ul class="body">
+				<li>
+					<h2>Création</h2>
+					<ul>
+						<li>Vide : <code>var t = new Array();</code></li>
+						<li><code>var t = new Array(<cite>Expression</cite><code class="separateur repeter">,</code>);</code></li>
+						<li>Vide : <code>var t = [];</code></li>
+						<li><code>var t = [<cite>Expression</cite><code class="separateur repeter">,</code>]</code>;</li>
+					</ul>
+				</li>
+				<li>
+					<h2>Consultation</h2>
+					<ul class="splits">
+						<li><code>var element = t[<cite class="donnee">indice</cite>];</code></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Parcourir un tableau</h2>
+					<ul>
+						<li>
+							<pre>for (var i = 0; i &lt; t.length; i++) {</pre>
+							<pre>  var element = t[i];</pre>
+							<pre>  <cite>instructions</cite><code class="separateur repeter"></code></pre>
+							<pre>}</pre>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2>Méthodes et propriétés</h2>
+					<ul class="splits">
+						<li><code>t.length</code> <span class="def">La longueur du tableau</span></li>
+						<li><code>t.push<sup>&Delta;</sup>(<cite>Expression</cite><code class="separateur repeter">,</code>)</code> <span class="def">Ajoute à la fin</span></li>
+						<li><code>t.pop<sup>&Delta;</sup>()</code> <span class="def">Retourne la dernière valeur et la retire du tableau</span></li>
+						<li><code>t.unshift<sup>&Delta;</sup>(<cite>Expression</cite><code class="separateur repeter">,</code>)</code> <span class="def">Ajoute au début</span></li>
+						<li><code>t.shift<sup>&Delta;</sup>()</code> <span class="def">Retourne la 1<sup> re</sup> valeur et la retire du tableau</span></li>
+
+						<!--							<li class="es6"><code>Array.from()</code><span class="def">...</span></li>-->
+						<!--							<li class="es6"><code>Array.isArray()</code><span class="def">...</span></li>-->
+						<!--							<li class="es6"><code>Array.observe()</code><span class="def">...</span></li>-->
+						<!--							<li class="es6"><code>Array.of()</code><span class="def">...</span></li>-->
+						<li><code>t.concat(<cite class="donnee">array</cite><code class="separateur repeter">,</code>)</code><span class="def">Fusionne des tableaux</span></li>
+						<!--							<li class="es6"><code>t.copyWithin()</code><span class="def">...</span></li>-->
+						<!--							<li class="es6"><code>t.entries()</code><span class="def">...</span></li>-->
+						<!--							<li class="es6"><code>t.fill()</code><span class="def">...</span></li>-->
+						<li><code>t.join(<cite class="donnee">separateur</cite>)</code><span class="def">Transforme en chaine de caractères</span></li>
+						<li>
+							<div>
+								<div><code>t.indexOf(<cite>Expression</cite>)</code></div>
+								<div><code>t.lastIndexOf(<cite>Expression</cite>)</code></div>
+								<div><code>t.includes(<cite>Expression</cite>)</code></div>
+							</div>
+							<span class="def">Cherche dans<br>le tableau</span>
+						</li>
+						<!--							<li class="skip"><code>t.keys()</code><span class="def">...</span></li>-->
+						<li>
+							<div>
+								<code>t.reverse<sup>&Delta;</sup>()</code>
+							</div>
+							<div>
+								<span class="def">Inverse le tableau</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<code>t.slice(<cite class="donnee">debut</cite>,<cite class="donnee optionnel">fin</cite>)</code>
+							</div>
+							<span class="def">Une portion du tableau à partir <br>d'un début jusqu'à une fin -1</span>
+						</li>
+						<li>
+							<div>
+								<code>t.splice<sup>&Delta;</sup>(<cite class="donnee">debut</cite>,<cite class="donnee optionnel">longueur</cite>)</code>
+							</div>
+							<span class="def" style="width: 22ch;">Retourne une portion du tableau d'une longueur à partir d'un début et la retire</span>
+						</li>
+						<li>
+							<div>
+								<code>t.sort<sup>&Delta;</sup>(<cite class="donnee optionnel">function</cite>)</code>
+							</div>
+							<span class="def">Trie le tableau</span>
+						</li>
+						<!--							<li class="skip"><code>t.toLocaleString()</code><span class="def">...</span></li>-->
+						<!--							<li class="skip"><code>t.toSource()</code><span class="def">...</span></li>-->
+						<!--							<li class="skip"><code>t.toString()</code><span class="def">...</span></li>-->
+						<!--							<li class="skip"><code>t.values()</code><span class="def">...</span></li>-->
+					</ul>
+				</li>
+				<!--
+				<li>
+					<h2>Parcourir</h2>
+					<ul>
+						<li class="callback">
+							<div><code>t.every()</code></div>
+							<div><code>t.some()</code></div>
+						</li>
+						<li class="callback">
+							<div><code>t.find()</code></div>
+							<div><code>t.findIndex()</code></div>
+						</li>
+						<li class="callback"><code>t.forEach()</code></li>
+						<li class="callback">
+							<div><code>t.map()</code></div>
+							<div><code>t.reduce()</code></div>
+							<div><code>t.reduceRight()</code></div>
+							<div><code>t.filter()</code></div>
+						</li>
+					</ul>
+				</li>
+		-->
+			</ul>
+			<div style="padding: 0 .5em .5em;">Légende: <sup>&Delta;</sup> La méthode modifie le tableau</div>
+		</article>
+	</div>
+</body>
+
+</html>

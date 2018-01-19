@@ -3,7 +3,7 @@
 @import url("mesmerize/style.css");
 
 @couleur-principale: #b16600;
-@couleur-principale: #363;
+@couleur-principale: #333;
 @couleur-alternance: hsl(hue(@couleur-principale), saturation(@couleur-principale), 90%);
 @couleur-alternanceinverse: hsl(hue(@couleur-principale), saturation(@couleur-principale), 97%);
 @couleur-pastille: hsl(hue(@couleur-principale), saturation(@couleur-principale) - 20, lightness(@couleur-principale) + 20);
@@ -324,6 +324,9 @@ code.separateur {
 	text-align: center;
 	padding: 0 .5ch;
 	vertical-align: middle;
+}
+.optionnel {
+	border-style: dashed;
 }
 .nowrap {
 	white-space: nowrap;

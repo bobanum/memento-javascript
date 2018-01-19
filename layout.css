@@ -21,6 +21,14 @@ div.grille {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(17, 1fr);
 }
+div.grille .colonnes *.body {
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 100%;
+}
+div.grille .colonnes *.body > li {
+  width: calc(50% - 0.1in);
+}
 div.grille #identificateurs {
   grid-row: span 9;
   grid-column: span 1;
@@ -57,7 +65,7 @@ div.grille #fonctions {
   grid-column: span 1;
 }
 div.grille #chaines {
-  grid-row: span 9;
+  grid-row: span 10;
   grid-column: span 1;
 }
 div.grille #echapement {
@@ -65,7 +73,7 @@ div.grille #echapement {
   grid-column: span 1;
 }
 div.grille #tableaux {
-  grid-area: auto / auto / span 10 / span 1;
+  grid-row: span 14;
   grid-column: span 1;
 }
 div.grille #definitions {

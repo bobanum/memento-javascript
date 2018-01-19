@@ -15,6 +15,16 @@ div.colonnes {
 	}
 }
 div.grille {
+	.colonnes {
+		*.body {
+			flex-wrap: wrap;
+			align-content: space-between;
+			height: 100%;
+			& > li {
+				width: calc(50% e('-') .1in);
+			}
+		}
+	}
 	display: grid;
 	grid-auto-flow: dense column;
 	grid-gap: 0.1in .2in;
@@ -34,14 +44,7 @@ div.grille {
 	}
 	#operateurs {
 		grid-area: 1 @s 2 @s span 9 @s span 2;
-		*.body {
-			flex-wrap: wrap;
-			align-content: space-between;
-			height: 100%;
-			& > li {
-				width: calc(50% e('-') .1in);
-			}
-		}
+		.colonnes;
 	}
 	#conditionnelles {
 		grid-row: auto e('/') span 8;
@@ -56,7 +59,7 @@ div.grille {
 		grid-column: span 1;
 	}
 	#chaines {
-		grid-row: span 9;
+		grid-row: span 10;
 		grid-column: span 1;
 	}
 	#echapement {
@@ -64,7 +67,7 @@ div.grille {
 		grid-column: span 1;
 	}
 	#tableaux {
-		grid-area: auto @s auto @s span 10 @s span 1;
+		grid-row: span 14;
 		grid-column: span 1;
 	}
 	#definitions {
